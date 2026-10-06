@@ -10,9 +10,16 @@ window.SITE_CONTENT = {
     intro: "探索 AI，记录实践，也给生活留一点好奇心。"
   },
   character: {
-    // 单角色原图使用相对路径，保持 GitHub Pages 部署兼容。
+    // 原始单角色图保留为 fallback；动画帧也使用相对路径，兼容 GitHub Pages。
     src: "assets/character/selected.png",
-    alt: "黎婷的猫耳女生角色"
+    alt: "黎婷的猫耳女生角色",
+    frames: [
+      { src: "assets/character/neutral-tail.png", duration: 2800 },
+      { src: "assets/character/sway-wave.png", duration: 1150 },
+      { src: "assets/character/neutral-tail.png", duration: 2400 },
+      { src: "assets/character/wink-wave.png", duration: 850 },
+      { src: "assets/character/neutral-tail.png", duration: 3200 }
+    ]
   },
   projects: [
     {
