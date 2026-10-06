@@ -1,47 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>个人主页</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header class="profile">
-      <div class="avatar">👨‍💻</div>
-      <h1 id="name">你好，我是开发者</h1>
-      <p class="tagline">热爱编程 · 保持好奇 · 探索技术</p>
-      <button id="themeToggle" class="btn">切换主题</button>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="黎婷的个人小天地：探索 AI，记录实践，把想法做成有用的小产品。">
+    <title>黎婷 · 个人小天地</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="shell nav-shell">
+        <a class="brand" href="#top" aria-label="回到黎婷个人主页顶部">
+          <span>黎婷</span>
+        </a>
+
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#work">作品</a>
+          <a href="#about">关于我</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="card">
-        <h2>关于我</h2>
-        <p>欢迎访问我的个人网站！这里记录我的项目和想法。</p>
+    <main id="main-content">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="shell hero-frame">
+          <div class="hero-stage">
+            <div class="hero-copy">
+              <h1 id="hero-title"><span class="hero-title-line">嗨，我是</span><span class="hero-title-line">黎婷。</span></h1>
+              <p class="hero-lead">把想法，做成有用的小产品。</p>
+            </div>
+
+            <figure class="hero-character">
+              <div id="characterMount" class="character-mount" role="img" aria-label="银色蓬松长发、碎齐刘海、圆脸和猫耳的黎婷角色"></div>
+              <figcaption class="sr-only">这里展示已确认的独立角色原图，不叠加绘制部件。</figcaption>
+              <noscript>这里展示黎婷的独立猫耳角色原图。</noscript>
+            </figure>
+          </div>
+
+          <a class="hero-scroll" href="#work" aria-label="继续浏览最近在做的项目">
+            <span>继续浏览</span>
+            <span class="hero-scroll-line" aria-hidden="true"></span>
+          </a>
+        </div>
       </section>
 
-      <section class="card">
-        <h2>技能栈</h2>
-        <ul class="skills">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-        </ul>
+      <section id="work" class="section work-section" aria-labelledby="work-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="section-kicker">01 / 正在发生</p>
+            <h2 id="work-title">最近在做什么</h2>
+            <p>把问题拆小一点，再多试几次。</p>
+          </div>
+
+          <div id="projectList" class="project-list" aria-live="polite"></div>
+        </div>
       </section>
 
-      <section class="card">
-        <h2>联系方式</h2>
-        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-        <p>GitHub: <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com</a></p>
+      <section id="about" class="section about-section" aria-labelledby="about-title">
+        <div class="shell about-grid">
+          <div class="section-heading reveal">
+            <p class="section-kicker">02 / 关于我</p>
+            <h2 id="about-title">不止是一份简介</h2>
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="about-lead">我喜欢从真实问题出发，尝试把新技术变成可以体验的小产品。这里会放我的项目、学习记录，以及一些还在生长中的想法。</p>
+            <div class="about-notes" aria-label="我在意的事">
+              <p><span aria-hidden="true">01</span> 从真实问题出发</p>
+              <p><span aria-hidden="true">02</span> 边做边学，保留试错</p>
+              <p><span aria-hidden="true">03</span> 给生活留一点好奇心</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="shell contact-grid">
+          <div class="section-heading reveal">
+            <p class="section-kicker">03 / 保持联系</p>
+            <h2 id="contact-title">来打个招呼吧</h2>
+            <p>如果你也在做有趣的事，欢迎留下一个线索。</p>
+          </div>
+
+          <div class="contact-list reveal" aria-label="联系入口">
+            <div class="contact-row">
+              <span class="contact-label">邮箱</span>
+              <span id="emailContact" class="contact-value is-placeholder">待填写</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">GitHub</span>
+              <span id="githubContact" class="contact-value is-placeholder">链接待补充</span>
+            </div>
+            <p class="contact-note">联系方式会在准备好后放在这里，目前先留一个空位。</p>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; <span id="year"></span> 我的个人网站</p>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>认真创造，偶尔发呆。</p>
+        <p class="footer-meta">© <span id="year"></span> 黎婷</p>
+      </div>
     </footer>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="content.js"></script>
+    <script src="character.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
