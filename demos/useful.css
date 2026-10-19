@@ -1,0 +1,7 @@
+@import url('demos.css');
+.demo-mvp-badge{font-size:11px;font-family:var(--mono);color:var(--muted);margin-bottom:6px}
+.demo-mvp-badge a{text-decoration:underline;text-underline-offset:2px}
+.demo-panel h2{font-size:15px;font-weight:500;margin:0 0 12px;letter-spacing:-.02em}
+.demo-log{font-family:var(--mono);font-size:11px;background:#faf9f6;border:1px solid rgba(38,38,31,.12);padding:10px;max-height:140px;overflow:auto;margin-top:10px}
+.demo-row{display:grid;gap:14px}
+@media(min-width:800px){.demo-row--2{grid-template-columns:1fr 1fr}}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF 万能工具箱 · Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../useful.css">
+</head>
+<body>
+<header class="demo-top"><strong>PDF 万能工具箱</strong><nav><a href="../index.html">← 演示角</a></nav></header>
+<div class="demo-hero"><img src="../../assets/demos/pdf-toolbox.jpg" alt="" width="960" height="412"></div>
+<main class="demo-wrap">
+<p class="demo-mvp-badge">雷达 MVP · <a href="https://github.com/Stirling-Tools/Stirling-PDF" target="_blank" rel="noopener">Stirling-PDF</a> · 纯浏览器处理</p>
+<h1>上传区 + 合并 / 压缩 / 水印 / 转图片</h1>
+<div class="demo-panel">
+  <input type="file" id="files" accept="application/pdf" multiple>
+  <div class="demo-controls" style="margin-top:12px">
+    <button type="button" id="merge">合并</button>
+    <button type="button" id="compress">压缩（简化）</button>
+    <button type="button" id="watermark">加水印</button>
+    <button type="button" id="toimg">转图片</button>
+  </div>
+  <div class="demo-log" id="log">选择至少一个 PDF。</div>
+  <div id="preview" style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px"></div>
+</div>
+<p class="demo-credit"><a href="https://radar.lyihub.com/">雷达</a> · 好用 #8</p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "source": "https://radar.lyihub.com/",
+  "track": "好用",
+  "items": [
+    { "slug": "ai-workbench", "title": "个人 AI 工作台", "upstream": "https://github.com/open-webui/open-webui" },
+    { "slug": "weekly-radar", "title": "信息雷达 / 周报机器人", "upstream": "https://github.com/duanyytop/agents-radar" },
+    { "slug": "finance-subscriptions", "title": "个人财务 / 订阅管理器", "upstream": "https://github.com/actualbudget/actual" },
+    { "slug": "pdf-toolbox", "title": "PDF 万能工具箱", "upstream": "https://github.com/Stirling-Tools/Stirling-PDF" },
+    { "slug": "uptime-monitor", "title": "服务健康监控面板", "upstream": "https://github.com/louislam/uptime-kuma" },
+    { "slug": "flash-memos", "title": "闪念备忘录 / 个人微博", "upstream": "https://github.com/usememos/memos" }
+  ]
+}

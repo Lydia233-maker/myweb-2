@@ -1,0 +1,67 @@
+{
+  "source": "https://radar.lyihub.com/",
+  "capturedAt": "2026-10-19",
+  "notes": "No login required. Radar has no per-item page; each prompt is the full text of the 体检 + Prompt dialog (#planPrompt / 复制开工提示词) on the homepage. url is the card source link.",
+  "items": [
+    {
+      "title": "个人 AI 工作台",
+      "description": "统一聊天、文件问答、网页总结和日常工具调用。",
+      "url": "https://github.com/open-webui/open-webui",
+      "boardUrl": "https://radar.lyihub.com/",
+      "track": "好用",
+      "rank": 1,
+      "source": "Open WebUI",
+      "prompt": "请直接帮我把这个项目跑起来。\n我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。\n项目：个人 AI 工作台\n项目地址：https://github.com/open-webui/open-webui\n先实现这个效果：先接一个模型，支持上传 PDF，回答时附来源片段。\n匹配的 Skill（可选）：\n- GitHub CLI：https://cli.github.com/\n- OpenAI Cookbook：https://github.com/openai/openai-cookbook\n请按这个顺序执行：\n1. 先读 README、安装说明、示例和依赖文件，确认官方启动方式。\n2. 检查当前环境；缺少账号、密钥、付费服务、硬件或必要权限时，告诉我具体缺什么。\n3. 按官方最短路径运行原项目，优先保留原项目的核心效果，不要擅自重写或缩水。项目不在当前目录时放进独立目录，不覆盖我现有文件。\n4. 遇到报错先看完整错误并修根因，不要反复重装或大面积改代码碰运气。\n5. 涉及删除文件、全局安装、登录授权、上传数据、硬件烧录或公开部署时，先向我确认。\n完成后告诉我：是否跑通、访问地址或生成结果、仍然卡在哪里。"
+    },
+    {
+      "title": "信息雷达 / 周报机器人",
+      "description": "自动扫描 Product Hunt、HN、GitHub 和 RSS，整理成可发布周报。",
+      "url": "https://github.com/duanyytop/agents-radar",
+      "boardUrl": "https://radar.lyihub.com/",
+      "track": "好用",
+      "rank": 3,
+      "source": "agents-radar",
+      "prompt": "请直接帮我把这个项目跑起来。\n我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。\n项目：信息雷达 / 周报机器人\n项目地址：https://github.com/duanyytop/agents-radar\n先实现这个效果：每日抓 30 条链接，去重、打分、生成 5 条推荐。\n匹配的 Skill（可选）：\n- GitHub CLI：https://cli.github.com/\n- Document Skills：https://github.com/anthropics/skills\n请按这个顺序执行：\n1. 先读 README、安装说明、示例和依赖文件，确认官方启动方式。\n2. 检查当前环境；缺少账号、密钥、付费服务、硬件或必要权限时，告诉我具体缺什么。\n3. 按官方最短路径运行原项目，优先保留原项目的核心效果，不要擅自重写或缩水。项目不在当前目录时放进独立目录，不覆盖我现有文件。\n4. 遇到报错先看完整错误并修根因，不要反复重装或大面积改代码碰运气。\n5. 涉及删除文件、全局安装、登录授权、上传数据、硬件烧录或公开部署时，先向我确认。\n完成后告诉我：是否跑通、访问地址或生成结果、仍然卡在哪里。"
+    },
+    {
+      "title": "个人财务 / 订阅管理器",
+      "description": "看清每月钱去了哪里，自动提醒快到期的订阅。",
+      "url": "https://github.com/actualbudget/actual",
+      "boardUrl": "https://radar.lyihub.com/",
+      "track": "好用",
+      "rank": 7,
+      "source": "Actual Budget",
+      "prompt": "请直接帮我把这个项目跑起来。\n我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。\n项目：个人财务 / 订阅管理器\n项目地址：https://github.com/actualbudget/actual\n先实现这个效果：导入账单 CSV，识别订阅，生成月度支出图。\n匹配的 Skill（可选）：\n- GitHub CLI：https://cli.github.com/\n请按这个顺序执行：\n1. 先读 README、安装说明、示例和依赖文件，确认官方启动方式。\n2. 检查当前环境；缺少账号、密钥、付费服务、硬件或必要权限时，告诉我具体缺什么。\n3. 按官方最短路径运行原项目，优先保留原项目的核心效果，不要擅自重写或缩水。项目不在当前目录时放进独立目录，不覆盖我现有文件。\n4. 遇到报错先看完整错误并修根因，不要反复重装或大面积改代码碰运气。\n5. 涉及删除文件、全局安装、登录授权、上传数据、硬件烧录或公开部署时，先向我确认。\n完成后告诉我：是否跑通、访问地址或生成结果、仍然卡在哪里。"
+    },
+    {
+      "title": "PDF 万能工具箱",
+      "description": "合并、压缩、签名、OCR、转图片，所有 PDF 小活都在本地跑。",
+      "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "boardUrl": "https://radar.lyihub.com/",
+      "track": "好用",
+      "rank": 8,
+      "source": "Stirling PDF",
+      "prompt": "请直接帮我把这个项目跑起来。\n我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。\n项目：PDF 万能工具箱\n项目地址：https://github.com/Stirling-Tools/Stirling-PDF\n先实现这个效果：做一个上传区，支持合并、压缩、加水印和转图片四个按钮。\n匹配的 Skill（可选）：\n- GitHub CLI：https://cli.github.com/\n- Document Skills：https://github.com/anthropics/skills\n请按这个顺序执行：\n1. 先读 README、安装说明、示例和依赖文件，确认官方启动方式。\n2. 检查当前环境；缺少账号、密钥、付费服务、硬件或必要权限时，告诉我具体缺什么。\n3. 按官方最短路径运行原项目，优先保留原项目的核心效果，不要擅自重写或缩水。项目不在当前目录时放进独立目录，不覆盖我现有文件。\n4. 遇到报错先看完整错误并修根因，不要反复重装或大面积改代码碰运气。\n5. 涉及删除文件、全局安装、登录授权、上传数据、硬件烧录或公开部署时，先向我确认。\n完成后告诉我：是否跑通、访问地址或生成结果、仍然卡在哪里。"
+    },
+    {
+      "title": "服务健康监控面板",
+      "description": "把网站、接口、自动化脚本都放进一个会报警的状态页。",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "boardUrl": "https://radar.lyihub.com/",
+      "track": "好用",
+      "rank": 9,
+      "source": "Uptime Kuma",
+      "prompt": "请直接帮我把这个项目跑起来。\n我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。\n项目：服务健康监控面板\n项目地址：https://github.com/louislam/uptime-kuma\n先实现这个效果：监控 5 个 URL，失败时发邮件/Telegram，并生成公开状态页。\n匹配的 Skill（可选）：\n- GitHub CLI：https://cli.github.com/\n- Sentry Agent Skills：https://github.com/getsentry/skills\n请按这个顺序执行：\n1. 先读 README、安装说明、示例和依赖文件，确认官方启动方式。\n2. 检查当前环境；缺少账号、密钥、付费服务、硬件或必要权限时，告诉我具体缺什么。\n3. 按官方最短路径运行原项目，优先保留原项目的核心效果，不要擅自重写或缩水。项目不在当前目录时放进独立目录，不覆盖我现有文件。\n4. 遇到报错先看完整错误并修根因，不要反复重装或大面积改代码碰运气。\n5. 涉及删除文件、全局安装、登录授权、上传数据、硬件烧录或公开部署时，先向我确认。\n完成后告诉我：是否跑通、访问地址或生成结果、仍然卡在哪里。"
+    },
+    {
+      "title": "闪念备忘录 / 个人微博",
+      "description": "像发微博一样记录想法、链接、截图和今日碎片。",
+      "url": "https://github.com/usememos/memos",
+      "boardUrl": "https://radar.lyihub.com/",
+      "track": "好用",
+      "rank": 11,
+      "source": "Memos",
+      "prompt": "请直接帮我把这个项目跑起来。\n我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。\n项目：闪念备忘录 / 个人微博\n项目地址：https://github.com/usememos/memos\n先实现这个效果：做快速输入、标签、日历视图和全文搜索。\n匹配的 Skill（可选）：\n- GitHub CLI：https://cli.github.com/\n- Document Skills：https://github.com/anthropics/skills\n请按这个顺序执行：\n1. 先读 README、安装说明、示例和依赖文件，确认官方启动方式。\n2. 检查当前环境；缺少账号、密钥、付费服务、硬件或必要权限时，告诉我具体缺什么。\n3. 按官方最短路径运行原项目，优先保留原项目的核心效果，不要擅自重写或缩水。项目不在当前目录时放进独立目录，不覆盖我现有文件。\n4. 遇到报错先看完整错误并修根因，不要反复重装或大面积改代码碰运气。\n5. 涉及删除文件、全局安装、登录授权、上传数据、硬件烧录或公开部署时，先向我确认。\n完成后告诉我：是否跑通、访问地址或生成结果、仍然卡在哪里。"
+    }
+  ]
+}
