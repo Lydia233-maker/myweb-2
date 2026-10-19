@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>24 小时人生拨盘 · Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../demos.css">
+<style>
+.dial-wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start}
+.dial-svg{flex:0 0 min(100%,320px);max-width:320px}
+.sliders{flex:1 1 240px;min-width:220px}
+.sl-row{display:grid;grid-template-columns:72px 1fr 44px;gap:8px;align-items:center;margin-bottom:10px;font-size:13px}
+.sl-row span:last-child{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:right}
+.review{font-size:14px;color:var(--body);white-space:pre-wrap;line-height:1.6;margin-top:12px;padding-top:12px;border-top:1px solid rgba(38,38,31,.12)}
+</style>
+</head>
+<body>
+  <header class="demo-top">
+    <strong>24 小时人生拨盘</strong>
+    <nav><a href="../index.html">← 演示角</a></nav>
+  </header>
+  <div class="demo-hero"><img src="../../assets/demos/day-dial.jpg" alt="" width="960" height="412"></div>
+  <main class="demo-wrap">
+    <p class="lead">拖拽滑杆分配一天 24 小时，自动保存到本地，并生成一句复盘。</p>
+    <div class="demo-panel dial-wrap">
+      <svg class="dial-svg" id="dial" viewBox="0 0 200 200" aria-label="24 小时分配环"></svg>
+      <div class="sliders" id="sliders"></div>
+    </div>
+    <div class="demo-panel">
+      <button type="button" id="normalize">按比例缩放到 24h</button>
+      <button type="button" class="ghost" id="reset">重置</button>
+      <div class="review" id="review"></div>
+    </div>
+    <p class="demo-credit">雷达：<strong>24 小时人生拨盘</strong> · <a href="https://radar.lyihub.com/" target="_blank" rel="noopener">radar.lyihub.com</a></p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

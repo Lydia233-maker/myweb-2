@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>浏览器合成器 · Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../demos.css">
+<style>
+.keys{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.keys kbd{font-family:var(--mono);font-size:11px;padding:6px 10px;border:1px solid var(--hair);background:#faf9f6}
+.hint{font-size:12px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+  <header class="demo-top">
+    <strong>浏览器合成器面板</strong>
+    <nav><a href="../index.html">← 演示角</a></nav>
+  </header>
+  <div class="demo-hero"><img src="../../assets/demos/synth-pad.jpg" alt="" width="960" height="412"></div>
+  <main class="demo-wrap">
+    <p class="lead">双振荡器 + 低通滤波 + delay。键盘 A–K 弹奏（先点一下页面解锁音频）。</p>
+    <div class="demo-panel">
+      <div class="demo-controls">
+        <button type="button" id="start">启动音频</button>
+        <label>滤波 <input type="range" id="filter" min="200" max="8000" value="2400"></label>
+        <label>Delay <input type="range" id="delay" min="0" max="0.45" step="0.01" value="0.18"></label>
+      </div>
+      <div class="keys" aria-hidden="true">
+        <kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd><kbd>G</kbd><kbd>H</kbd><kbd>J</kbd><kbd>K</kbd>
+      </div>
+      <p class="hint">雷达 MVP：键盘弹奏、滤波和 delay。</p>
+    </div>
+    <p class="demo-credit">雷达：<strong>浏览器合成器面板</strong> · <a href="https://radar.lyihub.com/" target="_blank" rel="noopener">radar.lyihub.com</a></p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
