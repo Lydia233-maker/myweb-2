@@ -207,14 +207,22 @@ a.folio-main:hover{background:#faf9f6}
   position:fixed;right:max(12px,calc(var(--pad-x) - 4px));bottom:max(10px,calc(var(--pad-b) - 2px));
   z-index:80;width:200px;height:200px;border-radius:0;overflow:visible;padding:0;
   border:0;background:transparent;box-shadow:none;
-  display:flex;align-items:center;justify-content:center;cursor:pointer;
-  transition:transform .2s cubic-bezier(.22,.61,.24,1);
+  display:flex;align-items:center;justify-content:center;cursor:grab;
+  touch-action:none;user-select:none;-webkit-user-select:none;
+  transition:filter .2s cubic-bezier(.22,.61,.24,1);
 }
-.nomi-fab:hover{transform:translateY(-4px) scale(1.06)}
+.nomi-fab.is-dragging{cursor:grabbing;transition:none}
+.nomi-fab.is-pressing{cursor:grabbing}
+.nomi-fab:hover:not(.is-dragging) img.nomi-face,
+.nomi-fab:focus-visible:not(.is-dragging) img.nomi-face{
+  transform:translateY(-4px) scale(1.05);
+  filter:drop-shadow(0 14px 24px rgba(30,28,22,.2));
+}
 .nomi-fab img.nomi-face{
   width:200px;height:200px;object-fit:contain;display:block;border-radius:0;
   pointer-events:none;background:transparent;opacity:1;
   filter:drop-shadow(0 10px 18px rgba(30,28,22,.14));
+  transition:transform .2s cubic-bezier(.22,.61,.24,1),filter .2s cubic-bezier(.22,.61,.24,1);
 }
 #nomiFab{opacity:1}
 .nomi-avatar img.nomi-face{width:100%;height:100%;object-fit:contain;display:block;border-radius:0;background:transparent}

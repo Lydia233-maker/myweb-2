@@ -29,8 +29,16 @@
 
     setIdle();
 
-    fab.addEventListener('mouseenter', playAnim);
-    fab.addEventListener('focus', playAnim);
+    function canHoverAnim() {
+      return !fab.classList.contains('is-dragging') && !fab.classList.contains('is-pressing');
+    }
+
+    fab.addEventListener('mouseenter', function () {
+      if (canHoverAnim()) playAnim();
+    });
+    fab.addEventListener('focus', function () {
+      if (canHoverAnim()) playAnim();
+    });
     fab.addEventListener('mouseleave', setIdle);
     fab.addEventListener('blur', setIdle);
   }
