@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rare Gallery · Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="mast reveal">
+    <h1>Rare Gallery</h1>
+    <p style="color:var(--muted);max-width:36em">不对称画廊：点击块面查看说明。极简、留白、适合作品集或展览目录。</p>
+  </header>
+  <section class="gallery reveal">
+    <div class="item tall" data-cap="主展：产品判断 · 2026"><div class="ph"></div></div>
+    <div class="item" data-cap="侧厅：Agent 边界"><div class="ph" style="background:linear-gradient(160deg,#e8e4dc,#d8d2c6)"></div></div>
+    <div class="item" data-cap="侧厅：评估集"><div class="ph" style="background:linear-gradient(200deg,#ece8e0,#cfc9bc)"></div></div>
+    <div class="item wide" data-cap="特展：lidyapm.com 小站"><div class="ph" style="background:linear-gradient(90deg,#e6e2d8,#d4cec2)"></div></div>
+  </section>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true"><p id="caption" style="color:#f4f2ed;font-size:18px;text-align:center"></p></div>
+  <a class="back" href="../index.html">← 演示角</a>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
