@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人 AI 工作台 · Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../useful.css">
+</head>
+<body>
+<header class="demo-top"><strong>个人 AI 工作台</strong><nav><a href="../index.html">← 演示角</a></nav></header>
+<div class="demo-hero"><img src="../../assets/demos/ai-workbench.jpg" alt="" width="960" height="412"></div>
+<main class="demo-wrap">
+<p class="demo-mvp-badge">雷达 MVP · 灵感 <a href="https://github.com/open-webui/open-webui" target="_blank" rel="noopener">Open WebUI</a> · 浏览器本地演示（无后端）</p>
+<h1>上传 PDF，问答附来源片段</h1>
+<p class="lead">在 GitHub Pages 上不接真实模型 API：用 PDF.js 抽文本，按关键词检索并高亮引用段落，模拟「带出处」的回答。</p>
+<div class="demo-row demo-row--2">
+  <div class="demo-panel">
+    <h2>1. 上传 PDF</h2>
+    <input type="file" id="pdf" accept="application/pdf">
+    <p id="pdfMeta" style="font-size:13px;color:var(--muted);margin-top:8px">尚未加载文件</p>
+  </div>
+  <div class="demo-panel">
+    <h2>2. 提问</h2>
+    <input type="text" id="q" placeholder="例如：退款政策是什么？" style="width:100%;padding:10px;border:1px solid var(--hair);font:inherit">
+    <button type="button" id="ask" style="margin-top:10px">生成回答（本地检索）</button>
+  </div>
+</div>
+<div class="demo-panel">
+  <h2>回答</h2>
+  <div id="answer" style="font-size:14px;line-height:1.6;color:var(--body)">先上传 PDF 并输入问题。</div>
+  <h2 style="margin-top:16px">来源片段</h2>
+  <div id="cites"></div>
+</div>
+<p class="demo-credit"><a href="https://radar.lyihub.com/" target="_blank" rel="noopener">Vibe Coding 雷达</a> · 好用 #1</p>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

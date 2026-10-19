@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>服务健康监控 · Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../useful.css">
+<style>
+.status-grid{display:grid;gap:10px}
+.status-row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:12px;border:1px solid rgba(38,38,31,.12);font-size:14px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:6px}
+.dot.up{background:#4a6b52}.dot.down{background:#b54a4a}.dot.warn{background:#c4a04a}
+.public-page{margin-top:16px;padding:16px;border:2px solid #1a1a17;background:#faf9f6}
+</style>
+</head>
+<body>
+<header class="demo-top"><strong>服务健康监控面板</strong><nav><a href="../index.html">← 演示角</a></nav></header>
+<div class="demo-hero"><img src="../../assets/demos/uptime-monitor.jpg" alt="" width="960" height="412"></div>
+<main class="demo-wrap">
+<p class="demo-mvp-badge">雷达 MVP · <a href="https://github.com/louislam/uptime-kuma" target="_blank" rel="noopener">Uptime Kuma</a></p>
+<h1>监控 URL · 失败告警示意 · 公开状态页</h1>
+<p class="lead">浏览器端用 fetch 检测可跨域的地址；其余为模拟探测。邮件/Telegram 以日志示意（Pages 无后端）。</p>
+<div class="demo-panel">
+  <button type="button" id="check">立即检测</button>
+  <label style="margin-left:12px;font-size:13px"><input type="checkbox" id="notify" checked> 失败时写入告警日志</label>
+  <div class="status-grid" id="grid" style="margin-top:14px"></div>
+  <div class="demo-log" id="alerts"></div>
+</div>
+<div class="demo-panel public-page" id="public" aria-label="公开状态页示意"></div>
+<p class="demo-credit"><a href="https://radar.lyihub.com/">雷达</a> · 好用 #9</p>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

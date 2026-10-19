@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人财务 / 订阅管理器 · Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../useful.css">
+</head>
+<body>
+<header class="demo-top"><strong>个人财务 / 订阅管理器</strong><nav><a href="../index.html">← 演示角</a></nav></header>
+<div class="demo-hero"><img src="../../assets/demos/finance-subscriptions.jpg" alt="" width="960" height="412"></div>
+<main class="demo-wrap">
+<p class="demo-mvp-badge">雷达 MVP · <a href="https://github.com/actualbudget/actual" target="_blank" rel="noopener">Actual Budget</a></p>
+<h1>导入 CSV · 识别订阅 · 月度支出图</h1>
+<p class="lead">可上传 CSV（date,description,amount）或使用示例数据。订阅按商户名聚合。</p>
+<div class="demo-panel">
+  <input type="file" id="csv" accept=".csv,text/csv">
+  <button type="button" id="sample" class="ghost" style="margin-left:8px;background:transparent;color:var(--ink);border:1px solid var(--hair)">加载示例账单</button>
+</div>
+<div class="demo-panel">
+  <h2>识别到的订阅</h2>
+  <ul id="subs" style="font-size:14px"></ul>
+</div>
+<div class="demo-panel"><canvas id="chart" height="200"></canvas></div>
+<p class="demo-credit"><a href="https://radar.lyihub.com/">雷达</a> · 好用 #7</p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

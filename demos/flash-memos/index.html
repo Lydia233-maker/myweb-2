@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>闪念备忘录 · Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../useful.css">
+<style>
+.memo-input{display:flex;gap:8px;flex-wrap:wrap}
+.memo-input input,.memo-input textarea{flex:1 1 200px;padding:10px;border:1px solid var(--hair);font:inherit}
+.memo-list{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.memo-item{padding:12px 14px;border:1px solid rgba(38,38,31,.12);background:#faf9f6;font-size:14px}
+.memo-item time{font-size:11px;color:var(--muted);font-family:var(--mono)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.tag-pill{font-size:11px;padding:2px 8px;border:1px solid var(--hair);cursor:pointer}
+.tag-pill.is-on{background:var(--ink);color:#f4f2ed}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;font-size:11px;margin-top:10px}
+.cal span{padding:6px;text-align:center;border:1px solid transparent}
+.cal span.has{border-color:var(--hair);background:#f4f2ed;cursor:pointer}
+</style>
+</head>
+<body>
+<header class="demo-top"><strong>闪念备忘录 / 个人微博</strong><nav><a href="../index.html">← 演示角</a></nav></header>
+<div class="demo-hero"><img src="../../assets/demos/flash-memos.jpg" alt="" width="960" height="412"></div>
+<main class="demo-wrap">
+<p class="demo-mvp-badge">雷达 MVP · <a href="https://github.com/usememos/memos" target="_blank" rel="noopener">Memos</a> · localStorage</p>
+<h1>快速输入 · 标签 · 日历 · 搜索</h1>
+<div class="demo-panel">
+  <div class="memo-input">
+    <textarea id="text" rows="2" placeholder="写一条闪念…"></textarea>
+    <input id="tags" placeholder="标签，逗号分隔">
+    <button type="button" id="post">发布</button>
+  </div>
+  <input type="search" id="search" placeholder="全文搜索" style="width:100%;margin-top:10px;padding:10px;border:1px solid var(--hair);font:inherit">
+  <div class="tags" id="tagFilter"></div>
+</div>
+<div class="demo-row demo-row--2">
+  <div class="demo-panel">
+    <h2>时间线</h2>
+    <div class="memo-list" id="list"></div>
+  </div>
+  <div class="demo-panel">
+    <h2>日历（本月有内容的日期）</h2>
+    <div class="cal" id="cal"></div>
+  </div>
+</div>
+<p class="demo-credit"><a href="https://radar.lyihub.com/">雷达</a> · 好用 #11</p>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
