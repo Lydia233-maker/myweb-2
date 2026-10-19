@@ -1,4 +1,4 @@
-# Vibe Coding 雷达 — 6 copyable prompts
+# radar.lyihub.com — 6 copyable prompts
 
 Source board: https://radar.lyihub.com/
 
@@ -18,7 +18,7 @@ All six are from the 好用 (utility) track, chosen as web product/tools rather 
 
 ```text
 请直接帮我把这个项目跑起来。
-我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。
+请直接操作并用简单中文说明，不要只给我计划。
 项目：个人 AI 工作台
 项目地址：https://github.com/open-webui/open-webui
 先实现这个效果：先接一个模型，支持上传 PDF，回答时附来源片段。
@@ -46,7 +46,7 @@ All six are from the 好用 (utility) track, chosen as web product/tools rather 
 
 ```text
 请直接帮我把这个项目跑起来。
-我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。
+请直接操作并用简单中文说明，不要只给我计划。
 项目：信息雷达 / 周报机器人
 项目地址：https://github.com/duanyytop/agents-radar
 先实现这个效果：每日抓 30 条链接，去重、打分、生成 5 条推荐。
@@ -74,7 +74,7 @@ All six are from the 好用 (utility) track, chosen as web product/tools rather 
 
 ```text
 请直接帮我把这个项目跑起来。
-我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。
+请直接操作并用简单中文说明，不要只给我计划。
 项目：个人财务 / 订阅管理器
 项目地址：https://github.com/actualbudget/actual
 先实现这个效果：导入账单 CSV，识别订阅，生成月度支出图。
@@ -101,7 +101,7 @@ All six are from the 好用 (utility) track, chosen as web product/tools rather 
 
 ```text
 请直接帮我把这个项目跑起来。
-我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。
+请直接操作并用简单中文说明，不要只给我计划。
 项目：PDF 万能工具箱
 项目地址：https://github.com/Stirling-Tools/Stirling-PDF
 先实现这个效果：做一个上传区，支持合并、压缩、加水印和转图片四个按钮。
@@ -129,7 +129,7 @@ All six are from the 好用 (utility) track, chosen as web product/tools rather 
 
 ```text
 请直接帮我把这个项目跑起来。
-我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。
+请直接操作并用简单中文说明，不要只给我计划。
 项目：服务健康监控面板
 项目地址：https://github.com/louislam/uptime-kuma
 先实现这个效果：监控 5 个 URL，失败时发邮件/Telegram，并生成公开状态页。
@@ -157,7 +157,7 @@ All six are from the 好用 (utility) track, chosen as web product/tools rather 
 
 ```text
 请直接帮我把这个项目跑起来。
-我是 Vibe Coding 新手，请直接操作并用简单中文说明，不要只给我计划。
+请直接操作并用简单中文说明，不要只给我计划。
 项目：闪念备忘录 / 个人微博
 项目地址：https://github.com/usememos/memos
 先实现这个效果：做快速输入、标签、日历视图和全文搜索。
