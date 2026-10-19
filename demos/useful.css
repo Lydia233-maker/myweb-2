@@ -1,4 +1,4 @@
-@import url('demos.css');
+@import url('demos.css?v=d1');
 .demo-mvp-badge{font-size:11px;font-family:var(--mono);color:var(--muted);margin-bottom:6px}
 .demo-mvp-badge a{text-decoration:underline;text-underline-offset:2px}
 .demo-panel h2{font-size:15px;font-weight:500;margin:0 0 12px;letter-spacing:-.02em}
