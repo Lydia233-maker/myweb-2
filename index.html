@@ -1,114 +1,53 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="黎婷的个人小天地：探索 AI，记录实践，把想法做成有用的小产品。">
-    <title>黎婷 · 个人小天地</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">跳到主要内容</a>
-
-    <header class="site-header">
-      <div class="shell nav-shell">
-        <a class="brand" href="#top" aria-label="回到黎婷个人主页顶部">
-          <span>黎婷</span>
-        </a>
-
-        <nav class="site-nav" aria-label="主导航">
-          <a href="#work">作品</a>
-          <a href="#about">关于我</a>
-          <a href="#contact">联系</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <section id="top" class="hero" aria-labelledby="hero-title">
-        <div class="shell hero-frame">
-          <div class="hero-stage">
-            <div class="hero-copy">
-              <h1 id="hero-title"><span class="hero-title-line">嗨，我是</span><span class="hero-title-line">黎婷。</span></h1>
-              <p class="hero-lead">把想法，做成有用的小产品。</p>
-            </div>
-
-            <figure class="hero-character">
-              <div id="characterMount" class="character-mount" role="img" aria-label="银色蓬松长发、碎齐刘海、圆脸和猫耳的黎婷角色"></div>
-              <figcaption class="sr-only">这里展示黎婷的独立角色动画帧，包含轻微挥手、左右摆头、wink 和猫尾巴。</figcaption>
-              <noscript>这里展示黎婷的独立猫耳角色原图。</noscript>
-            </figure>
-          </div>
-
-          <a class="hero-scroll" href="#work" aria-label="继续浏览最近在做的项目">
-            <span>继续浏览</span>
-            <span class="hero-scroll-line" aria-hidden="true"></span>
-          </a>
-        </div>
-      </section>
-
-      <section id="work" class="section work-section" aria-labelledby="work-title">
-        <div class="shell">
-          <div class="section-heading reveal">
-            <p class="section-kicker">01 / 正在发生</p>
-            <h2 id="work-title">最近在做什么</h2>
-            <p>把问题拆小一点，再多试几次。</p>
-          </div>
-
-          <div id="projectList" class="project-list" aria-live="polite"></div>
-        </div>
-      </section>
-
-      <section id="about" class="section about-section" aria-labelledby="about-title">
-        <div class="shell about-grid">
-          <div class="section-heading reveal">
-            <p class="section-kicker">02 / 关于我</p>
-            <h2 id="about-title">不止是一份简介</h2>
-          </div>
-
-          <div class="about-copy reveal">
-            <p class="about-lead">我喜欢从真实问题出发，尝试把新技术变成可以体验的小产品。这里会放我的项目、学习记录，以及一些还在生长中的想法。</p>
-            <div class="about-notes" aria-label="我在意的事">
-              <p><span aria-hidden="true">01</span> 从真实问题出发</p>
-              <p><span aria-hidden="true">02</span> 边做边学，保留试错</p>
-              <p><span aria-hidden="true">03</span> 给生活留一点好奇心</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
-        <div class="shell contact-grid">
-          <div class="section-heading reveal">
-            <p class="section-kicker">03 / 保持联系</p>
-            <h2 id="contact-title">来打个招呼吧</h2>
-            <p>如果你也在做有趣的事，欢迎留下一个线索。</p>
-          </div>
-
-          <div class="contact-list reveal" aria-label="联系入口">
-            <div class="contact-row">
-              <span class="contact-label">邮箱</span>
-              <span id="emailContact" class="contact-value is-placeholder">待填写</span>
-            </div>
-            <div class="contact-row">
-              <span class="contact-label">GitHub</span>
-              <span id="githubContact" class="contact-value is-placeholder">链接待补充</span>
-            </div>
-            <p class="contact-note">联系方式会在准备好后放在这里，目前先留一个空位。</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="shell footer-inner">
-        <p>认真创造，偶尔发呆。</p>
-        <p class="footer-meta">© <span id="year"></span> 黎婷</p>
-      </div>
-    </footer>
-
-    <script src="content.js"></script>
-    <script src="character.js"></script>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Bloom：把技术与自然重新连接起来的未来植物实验室。">
+  <title>Bloom · Organic intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--violet:#cb8dff;--text:#fff;--muted:rgba(255,255,255,.64);--glass:rgba(255,255,255,.15)}
+    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;background:#000}
+    body{margin:0;background:#000;color:var(--text);font-family:"Space Grotesk",system-ui,sans-serif;overflow-x:hidden}
+    button,input{font:inherit}.scroll-container{height:500vh;background:#000}.viewport{position:fixed;inset:0;overflow:hidden;background:#000}
+    .bg{position:absolute;inset:-5%;width:110%;height:110%;z-index:0;background:radial-gradient(circle at 70% 35%,#38194c 0,#100817 34%,#000 75%);transition:transform .4s ease}
+    .bg video{position:absolute;width:100%;height:100%;object-fit:cover;opacity:.65}.bg::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.12),rgba(0,0,0,.58))}
+    .header,.nav{position:absolute;z-index:10;top:clamp(24px,3vw,48px)}.header{left:clamp(24px,3vw,48px);display:flex;align-items:center;gap:11px}.brand-mark{width:38px;height:38px;border:1px solid rgba(255,255,255,.7);border-radius:50%;display:grid;place-items:center;font-size:21px}.brand{font:500 clamp(24px,2.2vw,32px)/1 "Instrument Serif",serif}
+    .nav{right:clamp(24px,3vw,48px)}.nav-list{display:flex;gap:5px;list-style:none;margin:0;padding:0}.nav a,.menu-button{display:block;border:0;border-radius:8px;padding:10px 18px;background:#fff;color:#111;text-decoration:none;font:500 13px Manrope,sans-serif;cursor:pointer}.menu-button{display:none;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2)}
+    .menu{position:fixed;inset:0;z-index:9;display:grid;place-items:center;background:rgba(0,0,0,.88);backdrop-filter:blur(24px);opacity:0;visibility:hidden;transition:.3s}.menu.open{opacity:1;visibility:visible}.menu a{color:#fff;text-decoration:none;font:40px "Instrument Serif",serif}.menu ul{display:grid;gap:14px;text-align:center;list-style:none;padding:0}
+    .intro{position:absolute;z-index:4;left:clamp(24px,3vw,48px);bottom:clamp(24px,3vw,48px);width:min(540px,calc(100% - 48px));padding:clamp(32px,3.2vw,56px);background:var(--glass);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(40px)}.intro h1{max-width:7ch;margin:0 0 18px;font:400 clamp(48px,5.5vw,78px)/1.02 "Instrument Serif",serif;letter-spacing:-.03em}.intro em{font-style:italic}.intro p{max-width:34em;margin:0;color:var(--muted);font:14px/1.7 Manrope,sans-serif}.cta{position:absolute;right:-44px;bottom:20px;width:88px;height:88px;border:0;border-radius:50%;background:var(--violet);color:#fff;cursor:pointer;font-size:34px;transition:transform .25s}.cta:hover{transform:scale(1.08)}
+    .scene{position:absolute;inset:0;z-index:5;display:grid;place-items:center;padding:24px;pointer-events:none;transition:opacity .4s,transform .4s}.scene.hidden{opacity:0;visibility:hidden;transform:translateY(30px)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,280px));gap:16px}.card{width:280px;height:410px;padding:24px;display:flex;flex-direction:column;background:var(--glass);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(40px);transition:.25s}.card:hover{border-color:rgba(255,255,255,.52)}.icon{color:var(--violet);font-size:46px}.card h2{margin:auto 0 8px;font:400 26px/1.1 "Instrument Serif",serif}.card p{margin:0;color:var(--muted);font:14px/1.55 Manrope,sans-serif}.mission{max-width:920px;text-align:center;font:400 clamp(32px,5vw,60px)/1.25 "Instrument Serif",serif}.pill{display:inline-block;padding:4px 22px;border-radius:999px;background:var(--violet);font-style:italic}.contact{width:min(460px,100%);padding:42px 32px;text-align:center;background:rgba(0,0,0,.52);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(40px)}.contact h2{margin:0 0 8px;font:400 32px "Instrument Serif",serif}.contact p{margin:0 0 24px;color:var(--muted);font:12px/1.6 Manrope,sans-serif;text-transform:uppercase;letter-spacing:.08em}.contact form{display:grid;gap:12px}.contact input,.contact button{width:100%;padding:14px 18px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#fff;text-align:center}.contact button{background:var(--violet);border:0;cursor:pointer;font-size:12px;font-weight:700;letter-spacing:.12em}.success{color:#6ee7b7!important;font-size:12px!important}.hidden{opacity:0;visibility:hidden}.mobile-only{display:none}
+    @media(max-width:768px){.nav-list{display:none}.menu-button{display:block}.intro{bottom:32px;padding:32px 24px}.intro h1{font-size:42px}.cta{width:64px;height:64px;right:-16px;bottom:-32px}.cards{width:100%;grid-template-columns:1fr;max-height:78vh;overflow:auto}.card{width:100%;height:auto;min-height:190px}.mission{font-size:34px}.nav a{display:none}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <main class="scroll-container" id="scrollContainer">
+    <div class="viewport">
+      <div class="bg" id="bg"><video id="video" muted playsinline autoplay loop preload="metadata" aria-hidden="true"><source src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/cloudinarry%20to%20cloudflare/202606101700_hglz7q.mp4" type="video/mp4"></video></div>
+      <div class="header"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand">Bloom</span></div>
+      <nav class="nav" aria-label="主导航"><ul class="nav-list"><li><a href="#atelier">Atelier</a></li><li><a href="#collections">Collections</a></li><li><a href="#rituals">Rituals</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul><button class="menu-button" id="menuButton" aria-label="打开菜单" aria-expanded="false">☰</button></nav>
+      <div class="menu" id="menu"><ul><li><a href="#atelier">Atelier</a></li><li><a href="#collections">Collections</a></li><li><a href="#rituals">Rituals</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <section class="intro" id="atelier"><h1>Merging <em>Silicon</em> With Organic <em>Life.</em></h1><p>Developing next-generation cyber-botanical systems designed to heal ecosystems and advance human technology.</p><button class="cta" id="cta" aria-label="探索系统">→</button></section>
+      <section class="scene hidden" id="collections"><div class="cards"><article class="card"><span class="icon">◌</span><h2>Neural Synthesis</h2><p>Hybrid bio-computing linking mycelium networks with logical silicon cores.</p></article><article class="card"><span class="icon">✣</span><h2>Ecosystem Remediation</h2><p>Self-replicating biomechanical flora actively restoring and cleansing toxic soil.</p></article><article class="card"><span class="icon">⌁</span><h2>Kinetic Transduction</h2><p>Converting natural photosynthesis cycles into electrical energy for local grids.</p></article></div></section>
+      <section class="scene hidden" id="rituals"><p class="mission">To gracefully cultivate a newly balanced <span class="pill">ecosystem</span> we dissolve all boundaries between technology and nature.</p></section>
+      <section class="scene hidden" id="about"><p class="mission">Growing through botanical <span class="pill">symbiosis</span> is the pathway to power the future.</p></section>
+      <section class="scene hidden" id="contact"><div class="contact"><h2>Cultivate alignment</h2><p>Subscribe to biological updates &amp; cybernetic releases.</p><form id="form"><input id="email" type="email" required placeholder="name@ecosystem.com" aria-label="邮箱地址"><button id="submit" type="submit">CONNECT</button></form><p class="success" id="success" hidden>Welcome to the digital flora.</p></div></section>
+    </div>
+  </main>
+  <script>
+    (()=>{
+      const container=document.getElementById('scrollContainer'),bg=document.getElementById('bg'),video=document.getElementById('video');const scenes=[document.getElementById('collections'),document.getElementById('rituals'),document.getElementById('about'),document.getElementById('contact')];let progress=0,target=0;
+      const show=(el,visible)=>{el.classList.toggle('hidden',!visible);el.style.pointerEvents=visible?'auto':'none'};
+      const render=()=>{progress+=(target-progress)*.08;const p=progress;scenes.forEach((el,i)=>{const start=.14+i*.22,end=start+.2;show(el,p>=start&&p<end)});requestAnimationFrame(render)};addEventListener('scroll',()=>{const max=container.scrollHeight-innerHeight;target=max?scrollY/max:0},{passive:true});requestAnimationFrame(render);
+      addEventListener('mousemove',e=>{bg.style.transform=`translate(${(e.clientX-innerWidth/2)/-45}px,${(e.clientY-innerHeight/2)/-45}px)`});document.getElementById('cta').onclick=()=>scrollTo({top:innerHeight*.8,behavior:'smooth'});
+      const menu=document.getElementById('menu'),button=document.getElementById('menuButton');button.onclick=()=>{const open=menu.classList.toggle('open');button.setAttribute('aria-expanded',open)};document.querySelectorAll('.menu a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+      document.getElementById('form').onsubmit=e=>{e.preventDefault();document.getElementById('submit').textContent='SUBMITTED';document.getElementById('submit').disabled=true;document.getElementById('success').hidden=false};video.addEventListener('error',()=>video.remove());video.play().catch(()=>{});
+    })();
+  </script>
+</body>
 </html>
