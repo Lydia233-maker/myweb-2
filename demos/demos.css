@@ -1,0 +1,37 @@
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#efede8;--panel:#f2f0eb;--rule:#26261f;--hair:#bdb9ae;
+  --ink:#1a1a17;--body:#4e4e47;--muted:#9e9e98;
+  --font:'Figtree',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;
+}
+html{font-size:16px;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.5}
+a{color:inherit}
+.demo-top{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 18px;border-bottom:1px solid var(--rule);background:var(--panel);
+  flex-wrap:wrap;
+}
+.demo-top a{font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.demo-top strong{font-weight:500;font-size:14px}
+.demo-wrap{max-width:920px;margin:0 auto;padding:20px 18px 48px}
+.demo-wrap h1{font-size:clamp(22px,4vw,32px);font-weight:400;letter-spacing:-.03em;margin:0 0 8px}
+.demo-wrap .lead{color:var(--body);font-size:14px;margin:0 0 20px;max-width:52em}
+.demo-panel{
+  background:var(--panel);border:1px solid var(--rule);padding:16px;margin-bottom:16px;
+}
+.demo-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.demo-controls label{font-size:12px;color:var(--body);display:flex;gap:8px;align-items:center}
+.demo-controls input[type=range]{width:120px}
+button, .demo-btn{
+  font:inherit;cursor:pointer;border:1px solid var(--rule);background:var(--ink);color:#f4f2ed;
+  padding:8px 14px;font-size:13px;
+}
+button.ghost,.demo-btn.ghost{background:transparent;color:var(--ink)}
+canvas,svg.demo-canvas{display:block;width:100%;background:#faf9f6;border:1px solid rgba(38,38,31,.14)}
+.demo-credit{margin-top:24px;font-size:12px;color:var(--muted);line-height:1.6}
+.demo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.demo-card{border:1px solid var(--hair);background:var(--panel);padding:16px;text-decoration:none;display:block}
+.demo-card:hover{background:#faf9f6}
+.demo-card h2{font-size:16px;font-weight:500;margin:0 0 6px}
+.demo-card p{font-size:13px;color:var(--body);margin:0}

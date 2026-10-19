@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>手绘灵感草图板 · Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../demos.css">
+</head>
+<body>
+  <header class="demo-top">
+    <strong>手绘风白板 / 灵感草图板</strong>
+    <nav><a href="../index.html">← 演示角</a></nav>
+  </header>
+  <main class="demo-wrap">
+    <p class="lead">粗糙笔触、可平移的无限画布感（拖拽空白处平移），一键清空。</p>
+    <div class="demo-panel">
+      <div class="demo-controls">
+        <label>粗细 <input type="range" id="size" min="1" max="12" value="3"></label>
+        <label>颜色 <input type="color" id="color" value="#1a1a17"></label>
+        <button type="button" class="ghost" id="clear">清空</button>
+      </div>
+      <canvas id="c" class="demo-canvas" width="800" height="480"></canvas>
+    </div>
+    <p class="demo-credit">雷达：<strong>手绘风白板 / 灵感草图板</strong> · <a href="https://radar.lyihub.com/" target="_blank" rel="noopener">radar.lyihub.com</a></p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

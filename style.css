@@ -282,6 +282,7 @@ a.folio-main:hover{background:#faf9f6}
 .js-anim .brand,.js-anim .nav a,.js-anim .actions > *,.js-anim .eyebrow,.js-anim .sub,.js-anim .ctas .btn,.js-anim .folio,.js-anim .footer,.js-anim #nomiFab{opacity:0}
 .js-anim h1 .ln-i{transform:translateY(130%)}
 
+.folio-mobile-more{display:none}
 @media (max-width:1040px){
   :root{--pad-x:22px;--pad-t:20px;--pad-b:19px;--hdr-h:60px;--hatch-h:clamp(22px,4vw,26px);--strip-h:56px;--lift:9px;--rise:18px}
   html{font-size:1px}
@@ -295,6 +296,11 @@ a.folio-main:hover{background:#faf9f6}
   .stage{padding:0 18px}
   .folio{grid-template-columns:1fr;height:auto;min-height:280px}
   .folio-side{display:none}.folio-main{border-right:0}
+  .folio-mobile-more{
+    display:flex;flex-direction:column;gap:10px;padding:14px 16px 18px;
+    border-top:var(--hairline) solid rgba(38,38,31,.12);background:var(--panel);
+  }
+  .folio-mobile-more a{font-size:14px;text-decoration:underline;text-underline-offset:3px;color:var(--body)}
 }
 @media (max-aspect-ratio:4/5){.lead{flex-grow:28}.gutter{flex-grow:10}}
 @media (max-width:780px){:root{--strip-h:64px}}
@@ -377,6 +383,24 @@ article.post.shell{
 .post__body li{margin-bottom:.35em}
 .post__body strong{font-weight:500}
 .post__body blockquote{border-left:var(--hairline) solid var(--rule);padding-left:1em;color:var(--body);margin:1.2em 0}
+.post-nav{
+  display:grid;grid-template-columns:1fr auto 1fr;gap:12rem;align-items:start;
+  margin-top:40rem;padding-top:28rem;border-top:var(--hairline) solid rgba(38,38,31,.12);
+  font-size:max(12px,13rem);
+}
+.post-nav__link{display:flex;flex-direction:column;gap:6rem;text-decoration:none;color:inherit}
+.post-nav__link strong{font-weight:400;font-size:max(13px,14.5rem);line-height:1.35;letter-spacing:-.02em}
+.post-nav__link span{font-family:var(--mono);font-size:max(10px,10.5rem);color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.post-nav__prev{text-align:left}
+.post-nav__next{text-align:right}
+.post-nav__hub{align-self:center;font-size:max(11px,12rem);text-decoration:underline;text-underline-offset:3px;color:var(--body);white-space:nowrap}
+.post-nav__spacer{min-height:1px}
+@media (max-width:720px){
+  .post-nav{grid-template-columns:1fr;gap:16rem}
+  .post-nav__next{text-align:left}
+  .post-nav__hub{justify-self:start}
+  article.post.shell{padding:32rem 16rem 44rem}
+}
 .notes-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14rem;margin-top:8rem}
 .card{
   padding:22rem 20rem;border:var(--hairline) solid var(--hair);

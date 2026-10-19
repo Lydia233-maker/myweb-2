@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生成式海报工厂 · Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../demos.css">
+</head>
+<body>
+  <header class="demo-top">
+    <strong>生成式海报 / 壁纸工厂</strong>
+    <nav><a href="../index.html">← 演示角</a></nav>
+  </header>
+  <main class="demo-wrap">
+    <p class="lead">滑参数、换种子，导出 PNG。按雷达 MVP：参数海报 + 随机种子 + 导出。</p>
+    <div class="demo-panel">
+      <div class="demo-controls">
+        <label>标题 <input type="text" id="title" value="VIBE CODING" maxlength="40"></label>
+        <label>色相 <input type="range" id="hue" min="0" max="360" value="28"></label>
+        <label>对比 <input type="range" id="contrast" min="0" max="100" value="55"></label>
+        <label>密度 <input type="range" id="density" min="4" max="24" value="12"></label>
+        <button type="button" id="seed">换种子</button>
+        <button type="button" id="export">导出 PNG</button>
+      </div>
+      <canvas id="c" class="demo-canvas" width="540" height="720"></canvas>
+    </div>
+    <p class="demo-credit" id="credit"></p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
