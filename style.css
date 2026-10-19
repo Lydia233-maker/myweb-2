@@ -409,9 +409,9 @@ body.subpage{
   flex:1 1 auto;
 }
 .page-hero{
-  padding:48rem 28rem 32rem;
+  padding:48px 28px 32px;
   border-bottom:var(--hairline) solid rgba(38,38,31,.12);
-  max-width:70ch;margin-left:auto;margin-right:auto;width:100%;
+  max-width:680px;margin-inline:auto;width:100%;box-sizing:border-box;
 }
 .page-kicker{
   font-family:var(--mono);font-size:max(10px,11rem);letter-spacing:.12em;text-transform:uppercase;
@@ -421,7 +421,7 @@ body.subpage{
   font-size:max(28px,36rem);font-weight:400;letter-spacing:-.03em;line-height:1.15;margin-bottom:12rem;
 }
 .page-lead{
-  font-size:max(13px,14.5rem);line-height:1.5;color:var(--body);max-width:36em;
+  font-size:max(13px,14.5rem);line-height:1.5;color:var(--body);max-width:100%;
 }
 .shell{padding:0 28rem 56rem;max-width:min(960px,100%);margin-left:auto;margin-right:auto;width:100%;box-sizing:border-box}
 .shell--read{max-width:min(1100px,100%)}
@@ -546,7 +546,7 @@ article.post.shell{
   .notes-grid{grid-template-columns:1fr}
 }
 @media (max-width:720px){
-  .page-hero{padding:36rem 18rem 24rem}
+  .page-hero{padding:36px 18px 24px}
   .shell{padding:0 16rem 40rem}
   .article-row{
     grid-template-columns:1fr;gap:12rem;padding:20rem 0;
