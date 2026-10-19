@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=mag3">
+<link rel="stylesheet" href="style.css?v=mag5">
 </head>
 <body class="subpage">
   <div class="frame frame--scroll">
@@ -27,6 +27,8 @@
       <nav class="nav" aria-label="主导航">
         <a href="index.html">首页</a>
         <a href="articles.html" class="is-active">笔记</a>
+        <a href="projects.html">项目</a>
+        <a href="demos/">演示</a>
         <a href="about.html">关于</a>
       </nav>
       <div class="actions">
@@ -36,6 +38,8 @@
       <div class="drawer" id="drawer">
         <a href="index.html">首页</a>
         <a href="articles.html">笔记</a>
+        <a href="projects.html">项目</a>
+        <a href="demos/">演示</a>
         <a href="about.html">关于</a>
         <a class="btn btn-ghost drawer-cta" href="mailto:q1091243677@gmail.com">写信给我</a>
       </div>
@@ -49,10 +53,10 @@
       <section class="shell">
         <ul class="article-list">
         <li><a class="article-row" href="articles/05-2026-ai-news-notes.html"><img class="article-row__thumb" src="assets/covers/05-ai-news.jpg" alt="一周三件事" width="120" height="68" loading="lazy"><time datetime="2026-10-18">2026.10</time><div><h2>这一周的 AI 新闻，我只想记三件事</h2><p>周报太吵，我只留三件能改 PRD 的：多模态开源、MCP 治理、Agent 管理面——其余先不进文档。</p></div></a></li>
-        <li><a class="article-row" href="articles/04-2025-agent-prd.html"><img class="article-row__thumb" src="assets/covers/04-agent-prd.jpg" alt="Agent PRD" width="120" height="68" loading="lazy"><time datetime="2025-09-08">2025.09</time><div><h2>Agent 来了之后，需求文档还怎么写</h2><p>2025：当系统能多步调用工具、自己规划路径，PRD 不再只是页面与字段清单，而要写清目标、边界、权限、可回放轨迹与人何时介入。</p></div></a></li>
-        <li><a class="article-row" href="articles/03-2025-fixing-ai-errors.html"><img class="article-row__thumb" src="assets/covers/03-fixing-errors.jpg" alt="AI 出错怎么修" width="120" height="68" loading="lazy"><time datetime="2025-01-12">2025.01</time><div><h2>AI 出了错怎么修</h2><p>2024 末到 2025 初：AI 功能上线后真正考验产品的不是 Demo 有多聪明，而是出错后怎么发现、怎么回退、怎么把人接回来、怎么把反馈变成下一次更少错。</p></div></a></li>
-        <li><a class="article-row" href="articles/02-2024-not-just-chat.html"><img class="article-row__thumb" src="assets/covers/02-not-just-chat.jpg" alt="别再当聊天框" width="120" height="68" loading="lazy"><time datetime="2024-06-22">2024.06</time><div><h2>别再把大模型当聊天框</h2><p>2024 年中：把大模型当聊天框，是最容易上手、也最容易做出玩具感产品的用法；检索增强（RAG）不是银弹，但是把「会说」拉回「有据」的关键一跳。</p></div></a></li>
-        <li><a class="article-row" href="articles/01-2023-chatgpt-fear.html"><img class="article-row__thumb" src="assets/covers/01-chatgpt-fear.jpg" alt="ChatGPT 那年" width="120" height="68" loading="lazy"><time datetime="2023-12-18">2023.12</time><div><h2>ChatGPT 那年，产品经理第一次认真害怕</h2><p>2023 年末回看：模型突然会写需求、会嘲讽方案，真正让我害怕的不是被取代，而是自己还在用旧习惯判断新东西。</p></div></a></li>
+        <li><a class="article-row" href="articles/04-2025-agent-prd.html"><img class="article-row__thumb" src="assets/covers/04-agent-prd.jpg" alt="Agent PRD" width="120" height="68" loading="lazy"><time datetime="2025-09-08">2025.09</time><div><h2>Agent 来了之后，需求文档还怎么写</h2><p>评审会上研发问「工具失败怎么办」时，我才发现旧 PRD 只画了聊天框——Agent 要写的是目标、禁区、权限和可回放轨迹。</p></div></a></li>
+        <li><a class="article-row" href="articles/03-2025-fixing-ai-errors.html"><img class="article-row__thumb" src="assets/covers/03-fixing-errors.jpg" alt="AI 出错怎么修" width="120" height="68" loading="lazy"><time datetime="2025-01-12">2025.01</time><div><h2>AI 出了错怎么修</h2><p>上线后用户买的不是聪明，是容错：谁发现、谁回滚、谁道歉、坏案例怎么进评测集——我用三个真实场景拆开写。</p></div></a></li>
+        <li><a class="article-row" href="articles/02-2024-not-just-chat.html"><img class="article-row__thumb" src="assets/covers/02-not-just-chat.jpg" alt="别再当聊天框" width="120" height="68" loading="lazy"><time datetime="2024-06-22">2024.06</time><div><h2>别再把大模型当聊天框</h2><p>会议材料第三页还是聊天框截图时，我会直接问：依据在哪？RAG 不神奇，但能把「会说」拉回「有据」。</p></div></a></li>
+        <li><a class="article-row" href="articles/01-2023-chatgpt-fear.html"><img class="article-row__thumb" src="assets/covers/01-chatgpt-fear.jpg" alt="ChatGPT 那年" width="120" height="68" loading="lazy"><time datetime="2023-12-18">2023.12</time><div><h2>ChatGPT 那年，产品经理第一次认真害怕</h2><p>周二下午把 PRD 扔进 ChatGPT，五分钟出一版更完整的——我害怕的不是被取代，是还在用旧习惯当标准。</p></div></a></li>
         </ul>
       </section>
 
