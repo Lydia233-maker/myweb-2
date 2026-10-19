@@ -1,25 +1,23 @@
-# 四格同色
+# lidyapm.com (myweb-2)
 
-一个只用原生 HTML、CSS、JavaScript 实现的手机网页小游戏。把待选的四格形状放到棋盘上，四个格子全部同色时即可消除并获得 40 分。
+黎婷的个人小站 — 静态站点，部署到 GitHub Pages（`CNAME`: lidyapm.com）。
 
-## 本地打开
+## 预览
 
-直接双击 [index.html](./index.html)，或在浏览器中打开它即可游玩。项目没有 npm、构建工具、外部库或外部素材。
+```bash
+cd /path/to/myweb-2
+python3 -m http.server 8080
+```
 
-## 用 GitHub Pages 发布
+浏览器打开 `http://localhost:8080/`。
 
-1. 新建一个 GitHub 仓库，把 `index.html` 和 `README.md` 放在仓库根目录。
-2. 在仓库的 **Settings → Pages** 中选择 **Deploy from a branch**。
-3. 选择包含文件的分支和 `/ (root)` 文件夹并保存。
-4. 等待 GitHub Pages 给出 `https://...` 网址，再用游戏里的“分享”按钮发送。
+## 结构
 
-## 真实手机上需要验证
-
-- 在手机竖屏下用点击棋盘格 + “确认放置”完成一整局。
-- 从待选区拖动形状，检查手指上方的预览、越界红框、同色绿框和松手提交。
-- 点旋转按钮，确认形状方向变化，旋转四次回到原形。
-- 成功消除后确认分数、下落、顶部补充和新形状正常。
-- 在发布后的 HTTPS 地址点击“分享”，确认系统分享或复制网址可用。
-- 检查手机浏览器的缩放、返回、横竖屏切换，以及 Safari/Chrome 的触摸体验。
-
-页面底部会显示内置规则自测结果；它覆盖旋转、越界、同色/不同色匹配、无解检测和消除补充后的 8×8 尺寸。
+- `index.html` — 编辑风首页（奶油色、folio 卡片、Nomi FAB）
+- `articles.html` — 文章列表（含封面缩略图）
+- `articles/*.html` — 五篇中文长文
+- `about.html` / `projects.html` — 关于与项目
+- `style.css` — 全站样式
+- `site-home.js` / `nomi.js` — 首页交互与 Nomi 关键词闲聊
+- `assets/covers/` — 文章封面图
+- `assets/nomi-anim.webp` — Nomi 动画（WebP，非 base64）

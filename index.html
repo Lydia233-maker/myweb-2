@@ -1,47 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#e7e7e7">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <meta name="description" content="欢迎来到 Lydia 的个人小空间。">
-  <title>Hello — Lydia</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#efede8">
+<meta name="description" content="黎婷的小站。做 AI 产品，顺便记点笔记。">
+<title>黎婷的小站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+(function(){try{if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('js-anim');}}catch(e){}})();
+</script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="hero" aria-label="首页">
-    <video class="hero__media" id="heroVideo" autoplay muted loop playsinline preload="auto"
-           poster="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261008_131819_f6c1a554-6417-497f-a8b7-585449018c39.png">
-      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261008_131936_fe93478c-8802-4266-a258-b4f95767462c.mp4" type="video/mp4">
-    </video>
-    <header class="nav" id="nav">
-      <a href="index.html" aria-label="首页"><svg class="nav__logo" viewBox="0 0 22 22" aria-hidden="true">
-<path fill="#050505" d="M0 0Q5.5 4.6 7 2.6Q11-1.6 15 2.6Q16.500 4.6 22 0V22Q16.500 17.400 15 19.400Q11 23.600 7 19.400Q5.500 17.400 0 22Z"/>
-<path fill="#ececea" d="M5.800 6.600Q6.500 10.300 10.200 11Q6.500 11.700 5.800 15.400Q5.100 11.700 1.400 11Q5.100 10.300 5.800 6.600ZM16.200 6.600Q16.900 10.300 20.600 11Q16.900 11.700 16.200 15.400Q15.500 11.700 11.800 11Q15.500 10.300 16.200 6.600Z"/>
-</svg></a>
-    </header>
-    <h1 class="hero__title">
-      <span class="sr-only">Hello</span>
-      <svg viewBox="0 0 91 21" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 0h3v3h-3zM12 0h3v3h-3zM0 3h3v3h-3zM12 3h3v3h-3zM0 6h3v3h-3zM12 6h3v3h-3zM0 9h3v3h-3zM3 9h3v3h-3zM6 9h3v3h-3zM9 9h3v3h-3zM12 9h3v3h-3zM0 12h3v3h-3zM12 12h3v3h-3zM0 15h3v3h-3zM12 15h3v3h-3zM0 18h3v3h-3zM12 18h3v3h-3zM19 0h3v3h-3zM22 0h3v3h-3zM25 0h3v3h-3zM28 0h3v3h-3zM31 0h3v3h-3zM19 3h3v3h-3zM19 6h3v3h-3zM19 9h3v3h-3zM22 9h3v3h-3zM25 9h3v3h-3zM28 9h3v3h-3zM19 12h3v3h-3zM19 15h3v3h-3zM19 18h3v3h-3zM22 18h3v3h-3zM25 18h3v3h-3zM28 18h3v3h-3zM31 18h3v3h-3zM38 0h3v3h-3zM38 3h3v3h-3zM38 6h3v3h-3zM38 9h3v3h-3zM38 12h3v3h-3zM38 15h3v3h-3zM38 18h3v3h-3zM41 18h3v3h-3zM44 18h3v3h-3zM47 18h3v3h-3zM50 18h3v3h-3zM57 0h3v3h-3zM57 3h3v3h-3zM57 6h3v3h-3zM57 9h3v3h-3zM57 12h3v3h-3zM57 15h3v3h-3zM57 18h3v3h-3zM60 18h3v3h-3zM63 18h3v3h-3zM66 18h3v3h-3zM69 18h3v3h-3zM79 0h3v3h-3zM82 0h3v3h-3zM85 0h3v3h-3zM76 3h3v3h-3zM88 3h3v3h-3zM76 6h3v3h-3zM88 6h3v3h-3zM76 9h3v3h-3zM88 9h3v3h-3zM76 12h3v3h-3zM88 12h3v3h-3zM76 15h3v3h-3zM88 15h3v3h-3zM79 18h3v3h-3zM82 18h3v3h-3zM85 18h3v3h-3z"/></svg>
-    </h1>
-    <p class="bubble" aria-label="旁白：随便看看就好。">
-      哈喽～随便看看就好。
-      <span class="bubble__cursor" aria-hidden="true"></span>
-      <svg class="bubble__tail" viewBox="0 0 6 6" shape-rendering="crispEdges" aria-hidden="true"><path fill="#e7e7e7" d="M1 0h4v1h-1v1h-1v1h-1v1h-1z"/><path fill="#050505" d="M0 0h1v5h-1zM1 4h1v1h-1zM2 3h1v1h-1zM3 2h1v1h-1zM4 1h1v1h-1zM5 0h1v1h-1z"/></svg>
-    </p>
-    <div class="hero__body">
-      <p class="hero__lede">欢迎来到 Lydia 的个人小空间。<br>一点想法、做过的事，还有还在慢慢长出来的东西。</p>
-      <nav class="hero__toc" aria-label="目录">
-        <p class="hero__toc-label">./</p>
-        <a href="articles.html"><span class="dim">├── </span>articles/&nbsp;&nbsp;我的文章</a>
-        <a href="projects.html"><span class="dim">├── </span>projects/&nbsp;&nbsp;我的项目</a>
-        <a href="about.html"><span class="dim">└── </span>about/&nbsp;&nbsp;&nbsp;&nbsp;关于她</a>
+  <div class="frame" id="home">
+    <header class="header">
+      <a class="brand" href="#home" aria-label="首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18.5" stroke="#1a1a17" stroke-width="1.9"/>
+            <ellipse cx="20" cy="20" rx="9.4" ry="18.1" stroke="#1a1a17" stroke-width="1.9" transform="rotate(-40 20 20)"/>
+            <ellipse cx="20" cy="20" rx="9.4" ry="18.1" stroke="#1a1a17" stroke-width="1.9" transform="rotate(40 20 20)"/>
+          </svg>
+        </span>
+        <span class="brand-name">黎婷<small>小站</small></span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a class="is-active" href="#home">首页</a>
+        <a href="#notes">笔记</a>
+        <a href="#doing">在做的</a>
+        <a href="#about">关于</a>
       </nav>
+      <div class="actions">
+        <a class="link-action mail" href="mailto:q1091243677@gmail.com">写信给我</a>
+        <button class="burger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer"><span class="bar"></span></button>
+      </div>
+      <div class="drawer" id="drawer">
+        <a href="#home">首页</a>
+        <a href="articles.html">笔记</a>
+        <a href="#doing">在做的</a>
+        <a href="about.html">关于</a>
+        <a class="btn btn-ghost drawer-cta" href="mailto:q1091243677@gmail.com">写信给我</a>
+      </div>
+    </header>
+
+    <div class="hatch" aria-hidden="true"></div>
+
+    <section class="hero">
+      <div class="lead" aria-hidden="true"></div>
+      <div class="copy">
+        <div class="eyebrow">欢迎来到我的个人小站</div>
+        <h1>
+          <span class="ln"><span class="ln-i">做 AI 产品，</span></span>
+          <span class="ln"><span class="ln-i dim">顺便记点笔记</span></span>
+        </h1>
+        <p class="sub">我是黎婷。最近常琢磨怎么让 AI 少说胡话。家里有只猫。</p>
+        <div class="ctas">
+          <a class="btn btn-solid btn-cta" href="articles.html">随便看看</a>
+          <a class="btn btn-ghost btn-cta" href="about.html">我是谁</a>
+        </div>
+      </div>
+      <div class="gutter" aria-hidden="true"></div>
+      <div class="stage">
+        <div class="folio" id="doing" aria-label="最近在动的东西">
+          <a class="folio-main" href="articles/05-2026-ai-news-notes.html" style="color:inherit">
+            <div class="folio-label"><span>Featured</span><strong>最近想多讲两句的</strong></div>
+            <div class="folio-body">
+              <div class="folio-kicker">笔记 · 2026.10</div>
+              <h2 class="folio-title">这一周的 AI 新闻，我只想记三件事</h2>
+              <p class="folio-desc">开源多模态、MCP 规范与企业落地——三件对做 AI 产品真正有影响的公开动态。</p>
+              <div class="folio-meta">
+                <span class="tag">AI 新闻</span><span class="tag">产品</span><span class="tag">笔记</span>
+              </div>
+            </div>
+          </a>
+          <div class="folio-side" id="notes">
+            <div class="folio-label"><span>Writing</span><strong>刚写的 · <a href="articles.html" style="text-decoration:underline;text-underline-offset:3px">全部</a></strong></div>
+            <div class="folio-body">
+              <article class="work-item"><span class="idx">01</span><h3><a href="articles/04-2025-agent-prd.html">Agent 来了之后，需求文档还怎么写</a></h3><p>当系统能多步调用工具，PRD 要写清边界、权限与人何时介入。</p></article>
+              <article class="work-item"><span class="idx">02</span><h3><a href="articles/03-2025-fixing-ai-errors.html">AI 出了错怎么修</a></h3><p>出错后怎么发现、回退、把人接回来。</p></article>
+              <article class="work-item"><span class="idx">03</span><h3><a href="articles/02-2024-not-just-chat.html">别再把大模型当聊天框</a></h3><p>把「会说」拉回「有据」的关键一跳。</p></article>
+            </div>
+          </div>
+          <div class="folio-side" id="about">
+            <div class="folio-label"><span>Now</span><strong>这阵子</strong></div>
+            <div class="folio-body">
+              <article class="work-item"><span class="idx">在琢磨</span><h3>评估集怎么才不骗人</h3><p>先把坏案例攒齐，再谈「效果好」。</p></article>
+              <article class="work-item"><span class="idx">在</span><h3>上海</h3><p>时区 Asia/Shanghai，偶尔出门晒太阳。</p></article>
+              <article class="work-item"><span class="idx">顺带</span>
+                <h3><button type="button" class="footer-nomi" id="aboutNomi">Nomi</button>、<a href="https://github.com/Lydia233-maker" target="_blank" rel="noopener">GitHub</a>、<a href="mailto:q1091243677@gmail.com">邮箱</a></h3>
+                <p>欢迎摸一下 Nomi。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hatch" aria-hidden="true"></div>
+
+    <footer class="footer">
+      最近更新：10 月 · <button type="button" class="footer-nomi" id="footerNomi">Nomi</button> 欢迎摸一下
+    </footer>
+  </div>
+
+  <button type="button" class="nomi-fab" id="nomiFab" aria-haspopup="dialog" aria-controls="nomiLayer" aria-expanded="false" aria-label="和 Nomi 聊天">
+    <span class="nomi-hint">摸一下 Nomi</span>
+    <img class="nomi-face" src="assets/nomi-anim.webp" width="200" height="200" alt="Nomi">
+  </button>
+
+  <div class="nomi-layer" id="nomiLayer" role="dialog" aria-modal="true" aria-labelledby="nomiTitle" hidden>
+    <div class="nomi-panel">
+      <div class="nomi-head">
+        <div class="nomi-avatar" aria-hidden="true">
+          <img class="nomi-face" src="assets/nomi-anim.webp" width="48" height="48" alt="">
+        </div>
+        <div class="nomi-head-txt">
+          <strong id="nomiTitle">Nomi</strong>
+          <span>偶尔说人话</span>
+        </div>
+        <button type="button" class="nomi-close" id="nomiClose" aria-label="关闭">×</button>
+      </div>
+      <div class="nomi-log" id="nomiLog" aria-live="polite"></div>
+      <div class="nomi-quick" id="nomiQuick">
+        <button type="button" data-q="你是谁？">你是谁？</button>
+        <button type="button" data-q="黎婷最近在忙啥？">黎婷最近在忙啥？</button>
+        <button type="button" data-q="摸一下">摸一下</button>
+      </div>
+      <form class="nomi-form" id="nomiForm">
+        <input id="nomiInput" type="text" autocomplete="off" maxlength="200" placeholder="跟 Nomi 说点什么…" aria-label="消息">
+        <button type="submit">发送</button>
+      </form>
     </div>
-  </section>
-  <script src="script.js"></script>
+  </div>
+
+  <script src="site-home.js"></script>
 </body>
 </html>
