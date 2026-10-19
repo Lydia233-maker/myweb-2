@@ -8,49 +8,80 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="黎婷写下的随笔与想法。">
-  <title>我的文章 — Lydia</title>
+  <meta name="description" content="写下我正在想的事。">
+  <title>文章 — Lydia</title>
 </head>
 <body>
-  <div class="page">
   <header class="nav nav--solid" id="nav">
     <a href="index.html" aria-label="回首页"><svg class="nav__logo" viewBox="0 0 22 22" aria-hidden="true">
 <path fill="#050505" d="M0 0Q5.5 4.6 7 2.6Q11-1.6 15 2.6Q16.500 4.6 22 0V22Q16.500 17.400 15 19.400Q11 23.600 7 19.400Q5.500 17.400 0 22Z"/>
 <path fill="#ececea" d="M5.800 6.600Q6.500 10.300 10.200 11Q6.500 11.700 5.800 15.400Q5.100 11.700 1.400 11Q5.100 10.300 5.800 6.600ZM16.200 6.600Q16.900 10.300 20.600 11Q16.900 11.700 16.200 15.400Q15.500 11.700 11.800 11Q15.500 10.300 16.200 6.600Z"/>
 </svg></a>
-    <a class="nav__back" href="index.html">← 首页</a>
-    <span class="nav__page">articles / 我的文章</span>
+    <nav class="nav__links" aria-label="站点目录"><a href="index.html">首页</a><a href="articles.html" aria-current="page">文章</a><a href="projects.html">项目</a><a href="about.html">关于她</a></nav>
   </header>
+
+  <main class="page">
     <section class="page__hero">
-      <p class="page__kicker">Articles</p>
-      <h1>我的文章</h1>
-      <p class="page__lead">想把平时一闪而过的念头、对产品的思考，以及对生活的一些看法，慢慢留在这里。</p>
+      <p class="page__kicker">ARTICLES</p>
+      <h1>写下我正在想的事</h1>
+      <p class="page__lead">有 AI、产品和做过的事，也有一些与工作无关的念头。它们未必都有答案，但我想先把它们留下来。</p>
     </section>
-    <div class="shell card-stack">
-      <article class="card">
-        <p class="meta">2026 · 随笔</p>
-        <h2>把一个想法做成能点开的东西</h2>
-        <p>从「我好像想到了」到「别人真的能用」，中间隔着很多很小的决定。</p>
-      </article>
-      <article class="card">
-        <p class="meta">2026 · 记录</p>
-        <h2>在二线城市找互联网机会时，我在看什么</h2>
-        <p>不只是大厂有没有分部，还有这座城市能不能让人安心地把事情做完。</p>
-      </article>
-      <article class="card">
-        <p class="meta">草稿</p>
-        <h2>关于「小天地」这件事</h2>
-        <p>我想给自己留一个不着急展示成果、也能诚实放情绪的角落。</p>
-      </article>
-    </div>
+    <section class="shell">
+      <ul class="article-list">
+        <li>
+          <a class="article-row" href="#soon">
+            <time datetime="2026-10">2026.10</time>
+            <div>
+              <h2>这一周的 AI 新闻，我只想记三件事</h2>
+              <p>最近公开动态里挑几件真正影响产品判断的，写一点自己的看法。全文正在搬上来。</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="article-row" href="#soon">
+            <time datetime="2025">2025</time>
+            <div>
+              <h2>Agent 来了之后，需求文档还怎么写</h2>
+              <p>工作流变了，验收标准和边界权限也得跟着改。全文正在搬上来。</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="article-row" href="#soon">
+            <time datetime="2025-01">2025.01</time>
+            <div>
+              <h2>AI 出了错怎么修</h2>
+              <p>演示挑最好的一次谁都会。真上线要看答错了怎么办：发现、回退、交还给人。全文正在搬上来。</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="article-row" href="#soon">
+            <time datetime="2024-06">2024.06</time>
+            <div>
+              <h2>别再把大模型当聊天框</h2>
+              <p>用产品同学能懂的话讲清 RAG：什么时候该用、常见误解是什么。全文正在搬上来。</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="article-row" href="#soon">
+            <time datetime="2023-12">2023.12</time>
+            <div>
+              <h2>ChatGPT 那年，产品经理第一次认真害怕</h2>
+              <p>2023 年末的观察与自我提醒，少一点硬核 PM 腔。全文正在搬上来。</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
   <footer class="site-footer">
     <div>
       <strong>聊聊也可以</strong>
       <p>关于文章里的某个想法，或者你最近在折腾的东西，都欢迎来聊聊。</p>
     </div>
-    <p>黎婷的小天地 · © <span class="year"></span> Lydia</p>
+    <p>© <span class="year"></span> 黎婷 Lydia · lidyapm.com</p>
   </footer>
   <script src="script.js"></script>
-  </div>
 </body>
 </html>
