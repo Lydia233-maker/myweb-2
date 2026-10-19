@@ -166,6 +166,7 @@
   }
   var started=false;
   function kick(){ if(started) return; started=true; requestAnimationFrame(function(){ requestAnimationFrame(start); }); }
-  if(document.fonts && document.fonts.ready) document.fonts.ready.then(kick);
-  setTimeout(kick, 1200);
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(kick).catch(kick);
+  setTimeout(kick, 400);
+  setTimeout(function(){ if(document.documentElement.classList.contains('js-anim')) finish(); }, 2800);
 })();
