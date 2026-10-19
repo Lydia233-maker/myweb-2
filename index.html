@@ -3,51 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#000000">
-  <meta name="description" content="Bloom：把技术与自然重新连接起来的未来植物实验室。">
-  <title>Bloom · Organic intelligence</title>
+  <meta name="theme-color" content="#0b0712">
+  <meta name="description" content="黎婷的小天地：放想法、项目和一点心里话的地方。">
+  <title>黎婷的小天地</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root{--violet:#cb8dff;--text:#fff;--muted:rgba(255,255,255,.64);--glass:rgba(255,255,255,.15)}
-    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;background:#000}
-    body{margin:0;background:#000;color:var(--text);font-family:"Space Grotesk",system-ui,sans-serif;overflow-x:hidden}
-    button,input{font:inherit}.scroll-container{height:500vh;background:#000}.viewport{position:fixed;inset:0;overflow:hidden;background:#000}
-    .bg{position:absolute;inset:-5%;width:110%;height:110%;z-index:0;background:radial-gradient(circle at 70% 35%,#38194c 0,#100817 34%,#000 75%);transition:transform .4s ease}
-    .bg video{position:absolute;width:100%;height:100%;object-fit:cover;opacity:.65}.bg::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.12),rgba(0,0,0,.58))}
-    .header,.nav{position:absolute;z-index:10;top:clamp(24px,3vw,48px)}.header{left:clamp(24px,3vw,48px);display:flex;align-items:center;gap:11px}.brand-mark{width:38px;height:38px;border:1px solid rgba(255,255,255,.7);border-radius:50%;display:grid;place-items:center;font-size:21px}.brand{font:500 clamp(24px,2.2vw,32px)/1 "Instrument Serif",serif}
-    .nav{right:clamp(24px,3vw,48px)}.nav-list{display:flex;gap:5px;list-style:none;margin:0;padding:0}.nav a,.menu-button{display:block;border:0;border-radius:8px;padding:10px 18px;background:#fff;color:#111;text-decoration:none;font:500 13px Manrope,sans-serif;cursor:pointer}.menu-button{display:none;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2)}
-    .menu{position:fixed;inset:0;z-index:9;display:grid;place-items:center;background:rgba(0,0,0,.88);backdrop-filter:blur(24px);opacity:0;visibility:hidden;transition:.3s}.menu.open{opacity:1;visibility:visible}.menu a{color:#fff;text-decoration:none;font:40px "Instrument Serif",serif}.menu ul{display:grid;gap:14px;text-align:center;list-style:none;padding:0}
-    .intro{position:absolute;z-index:4;left:clamp(24px,3vw,48px);bottom:clamp(24px,3vw,48px);width:min(540px,calc(100% - 48px));padding:clamp(32px,3.2vw,56px);background:var(--glass);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(40px)}.intro h1{max-width:7ch;margin:0 0 18px;font:400 clamp(48px,5.5vw,78px)/1.02 "Instrument Serif",serif;letter-spacing:-.03em}.intro em{font-style:italic}.intro p{max-width:34em;margin:0;color:var(--muted);font:14px/1.7 Manrope,sans-serif}.cta{position:absolute;right:-44px;bottom:20px;width:88px;height:88px;border:0;border-radius:50%;background:var(--violet);color:#fff;cursor:pointer;font-size:34px;transition:transform .25s}.cta:hover{transform:scale(1.08)}
-    .scene{position:absolute;inset:0;z-index:5;display:grid;place-items:center;padding:24px;pointer-events:none;transition:opacity .4s,transform .4s}.scene.hidden{opacity:0;visibility:hidden;transform:translateY(30px)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,280px));gap:16px}.card{width:280px;height:410px;padding:24px;display:flex;flex-direction:column;background:var(--glass);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(40px);transition:.25s}.card:hover{border-color:rgba(255,255,255,.52)}.icon{color:var(--violet);font-size:46px}.card h2{margin:auto 0 8px;font:400 26px/1.1 "Instrument Serif",serif}.card p{margin:0;color:var(--muted);font:14px/1.55 Manrope,sans-serif}.mission{max-width:920px;text-align:center;font:400 clamp(32px,5vw,60px)/1.25 "Instrument Serif",serif}.pill{display:inline-block;padding:4px 22px;border-radius:999px;background:var(--violet);font-style:italic}.contact{width:min(460px,100%);padding:42px 32px;text-align:center;background:rgba(0,0,0,.52);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(40px)}.contact h2{margin:0 0 8px;font:400 32px "Instrument Serif",serif}.contact p{margin:0 0 24px;color:var(--muted);font:12px/1.6 Manrope,sans-serif;text-transform:uppercase;letter-spacing:.08em}.contact form{display:grid;gap:12px}.contact input,.contact button{width:100%;padding:14px 18px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#fff;text-align:center}.contact button{background:var(--violet);border:0;cursor:pointer;font-size:12px;font-weight:700;letter-spacing:.12em}.success{color:#6ee7b7!important;font-size:12px!important}.hidden{opacity:0;visibility:hidden}.mobile-only{display:none}
-    @media(max-width:768px){.nav-list{display:none}.menu-button{display:block}.intro{bottom:32px;padding:32px 24px}.intro h1{font-size:42px}.cta{width:64px;height:64px;right:-16px;bottom:-32px}.cards{width:100%;grid-template-columns:1fr;max-height:78vh;overflow:auto}.card{width:100%;height:auto;min-height:190px}.mission{font-size:34px}.nav a{display:none}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="scroll-container" id="scrollContainer">
-    <div class="viewport">
-      <div class="bg" id="bg"><video id="video" muted playsinline autoplay loop preload="metadata" aria-hidden="true"><source src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/cloudinarry%20to%20cloudflare/202606101700_hglz7q.mp4" type="video/mp4"></video></div>
-      <div class="header"><span class="brand-mark" aria-hidden="true">✦</span><span class="brand">Bloom</span></div>
-      <nav class="nav" aria-label="主导航"><ul class="nav-list"><li><a href="#atelier">Atelier</a></li><li><a href="#collections">Collections</a></li><li><a href="#rituals">Rituals</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul><button class="menu-button" id="menuButton" aria-label="打开菜单" aria-expanded="false">☰</button></nav>
-      <div class="menu" id="menu"><ul><li><a href="#atelier">Atelier</a></li><li><a href="#collections">Collections</a></li><li><a href="#rituals">Rituals</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
-      <section class="intro" id="atelier"><h1>Merging <em>Silicon</em> With Organic <em>Life.</em></h1><p>Developing next-generation cyber-botanical systems designed to heal ecosystems and advance human technology.</p><button class="cta" id="cta" aria-label="探索系统">→</button></section>
-      <section class="scene hidden" id="collections"><div class="cards"><article class="card"><span class="icon">◌</span><h2>Neural Synthesis</h2><p>Hybrid bio-computing linking mycelium networks with logical silicon cores.</p></article><article class="card"><span class="icon">✣</span><h2>Ecosystem Remediation</h2><p>Self-replicating biomechanical flora actively restoring and cleansing toxic soil.</p></article><article class="card"><span class="icon">⌁</span><h2>Kinetic Transduction</h2><p>Converting natural photosynthesis cycles into electrical energy for local grids.</p></article></div></section>
-      <section class="scene hidden" id="rituals"><p class="mission">To gracefully cultivate a newly balanced <span class="pill">ecosystem</span> we dissolve all boundaries between technology and nature.</p></section>
-      <section class="scene hidden" id="about"><p class="mission">Growing through botanical <span class="pill">symbiosis</span> is the pathway to power the future.</p></section>
-      <section class="scene hidden" id="contact"><div class="contact"><h2>Cultivate alignment</h2><p>Subscribe to biological updates &amp; cybernetic releases.</p><form id="form"><input id="email" type="email" required placeholder="name@ecosystem.com" aria-label="邮箱地址"><button id="submit" type="submit">CONNECT</button></form><p class="success" id="success" hidden>Welcome to the digital flora.</p></div></section>
-    </div>
+  <a class="skip-link" href="#articles">跳到主要内容</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span class="brand-text">
+        <strong>黎婷的小天地</strong>
+        <em>Lydia's little world</em>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#articles">我的文章</a>
+      <a href="#projects">我的项目</a>
+      <a href="#portrait">关于她</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false">菜单</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#articles">我的文章</a>
+    <a href="#projects">我的项目</a>
+    <a href="#portrait">关于她</a>
+  </div>
+
+  <main>
+    <section class="hero" aria-label="首页动画">
+      <div class="hero-stage">
+        <div class="hero-bg" id="heroBg">
+          <video id="heroVideo" muted playsinline autoplay loop preload="metadata" aria-hidden="true">
+            <source src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/cloudinarry%20to%20cloudflare/202606101700_hglz7q.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="hero-copy">
+          <p class="hero-kicker">欢迎来到</p>
+          <h1>黎婷的小天地</h1>
+          <p class="hero-lead">这里放着想法、作品，还有一点点还没说完的话。</p>
+          <p class="hero-hint" id="heroHint">移动鼠标，画面会跟着你</p>
+        </div>
+        <a class="hero-scroll" href="#articles">往下看看</a>
+      </div>
+    </section>
+
+    <section class="section" id="articles" aria-labelledby="articles-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">01</p>
+          <h2 id="articles-title">我的文章</h2>
+          <p>最近写下的一些想法，之后会慢慢补上全文。</p>
+        </div>
+        <div class="article-list">
+          <article class="article-card">
+            <p class="meta">2026 · 随笔</p>
+            <h3>把一个想法做成能点开的东西</h3>
+            <p>从「我好像想到了」到「别人真的能用」，中间隔着很多很小的决定。</p>
+          </article>
+          <article class="article-card">
+            <p class="meta">2026 · 记录</p>
+            <h3>在二线城市找互联网机会时，我在看什么</h3>
+            <p>不只是大厂有没有分部，还有这座城市能不能让人安心地把事情做完。</p>
+          </article>
+          <article class="article-card">
+            <p class="meta">草稿</p>
+            <h3>关于「小天地」这件事</h3>
+            <p>我想给自己留一个不着急展示成果、也能诚实放情绪的角落。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">02</p>
+          <h2 id="projects-title">我的项目</h2>
+          <p>正在做的、做过的，以及还在发芽的。</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="meta">进行中</p>
+            <h3>个人小天地网站</h3>
+            <p>这个站点本身：用中文把文章、项目和一点点自我侧写放在一起。</p>
+          </article>
+          <article class="project-card">
+            <p class="meta">探索中</p>
+            <h3>AI 辅助学习</h3>
+            <p>试着把学习流程拆小，让新工具真正帮到日常，而不是只停留在演示。</p>
+          </article>
+          <article class="project-card">
+            <p class="meta">想法</p>
+            <h3>下一个小产品</h3>
+            <p>还在收集真实问题。有了更清楚的方向，会更新到这里。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portrait" aria-labelledby="portrait-title">
+      <div class="shell portrait-grid">
+        <div class="section-heading">
+          <p class="section-kicker">03</p>
+          <h2 id="portrait-title">关于她</h2>
+          <p class="portrait-subtitle">她的侧写</p>
+        </div>
+        <div class="portrait-copy">
+          <p class="lead">你好，我是黎婷，也可以叫我 Lydia。</p>
+          <p>我喜欢从真实的小事出发，试着把新技术变成别人能摸到的体验。这里不是一份简历，更像一间慢慢布置的房间：有文章，有项目，也有还没想明白的句子。</p>
+          <p>如果某一天你在这里停留得久一点，希望带走的是一点好奇，而不是一套标准答案。</p>
+          <ul class="portrait-notes" aria-label="她在意的事">
+            <li>从真实问题出发</li>
+            <li>边做边学，允许试错</li>
+            <li>给生活留一点空白</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
-  <script>
-    (()=>{
-      const container=document.getElementById('scrollContainer'),bg=document.getElementById('bg'),video=document.getElementById('video');const scenes=[document.getElementById('collections'),document.getElementById('rituals'),document.getElementById('about'),document.getElementById('contact')];let progress=0,target=0;
-      const show=(el,visible)=>{el.classList.toggle('hidden',!visible);el.style.pointerEvents=visible?'auto':'none'};
-      const render=()=>{progress+=(target-progress)*.08;const p=progress;scenes.forEach((el,i)=>{const start=.14+i*.22,end=start+.2;show(el,p>=start&&p<end)});requestAnimationFrame(render)};addEventListener('scroll',()=>{const max=container.scrollHeight-innerHeight;target=max?scrollY/max:0},{passive:true});requestAnimationFrame(render);
-      addEventListener('mousemove',e=>{bg.style.transform=`translate(${(e.clientX-innerWidth/2)/-45}px,${(e.clientY-innerHeight/2)/-45}px)`});document.getElementById('cta').onclick=()=>scrollTo({top:innerHeight*.8,behavior:'smooth'});
-      const menu=document.getElementById('menu'),button=document.getElementById('menuButton');button.onclick=()=>{const open=menu.classList.toggle('open');button.setAttribute('aria-expanded',open)};document.querySelectorAll('.menu a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
-      document.getElementById('form').onsubmit=e=>{e.preventDefault();document.getElementById('submit').textContent='SUBMITTED';document.getElementById('submit').disabled=true;document.getElementById('success').hidden=false};video.addEventListener('error',()=>video.remove());video.play().catch(()=>{});
-    })();
-  </script>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>黎婷的小天地 · 认真创造，偶尔发呆。</p>
+      <p class="footer-meta">© <span id="year"></span> 黎婷 Lydia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
