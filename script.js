@@ -1,6 +1,7 @@
 (() => {
-  const year = document.getElementById("year");
-  if (year) year.textContent = String(new Date().getFullYear());
+  document.querySelectorAll(".year").forEach((el) => {
+    el.textContent = String(new Date().getFullYear());
+  });
 
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
@@ -28,15 +29,9 @@
     video.addEventListener("error", () => video.remove());
     video.play().catch(() => {});
   }
-
   if (!bg || reduceMotion) return;
 
-  let targetX = 0;
-  let targetY = 0;
-  let currentX = 0;
-  let currentY = 0;
-  let hintHidden = false;
-
+  let targetX = 0, targetY = 0, currentX = 0, currentY = 0, hintHidden = false;
   const apply = () => {
     const tx = currentX * -42;
     const ty = currentY * -30;
@@ -44,14 +39,12 @@
     const ry = currentX * -7;
     bg.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotateX(${rx}deg) rotateY(${ry}deg) scale(1.08)`;
   };
-
   const tick = () => {
     currentX += (targetX - currentX) * 0.08;
     currentY += (targetY - currentY) * 0.08;
     apply();
     requestAnimationFrame(tick);
   };
-
   const setFromPoint = (clientX, clientY) => {
     targetX = Math.max(-1, Math.min(1, (clientX / window.innerWidth) * 2 - 1));
     targetY = Math.max(-1, Math.min(1, (clientY / window.innerHeight) * 2 - 1));
@@ -60,16 +53,10 @@
       hint.classList.add("is-gone");
     }
   };
-
   window.addEventListener("mousemove", (e) => setFromPoint(e.clientX, e.clientY), { passive: true });
-  window.addEventListener(
-    "touchmove",
-    (e) => {
-      if (!e.touches[0]) return;
-      setFromPoint(e.touches[0].clientX, e.touches[0].clientY);
-    },
-    { passive: true }
-  );
-
+  window.addEventListener("touchmove", (e) => {
+    if (!e.touches[0]) return;
+    setFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+  }, { passive: true });
   requestAnimationFrame(tick);
 })();

@@ -11,11 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <a class="skip-link" href="#articles">跳到主要内容</a>
-
+<body class="page-home">
+  <a class="skip-link" href="#enter">跳到主要内容</a>
   <header class="site-header" id="top">
-    <a class="brand" href="#top">
+    <a class="brand" href="index.html">
       <span class="brand-mark" aria-hidden="true">✦</span>
       <span class="brand-text">
         <strong>黎婷的小天地</strong>
@@ -23,19 +22,17 @@
       </span>
     </a>
     <nav class="site-nav" aria-label="主导航">
-      <a href="#articles">我的文章</a>
-      <a href="#projects">我的项目</a>
-      <a href="#portrait">关于她</a>
+      <a href="articles.html">我的文章</a>
+      <a href="projects.html">我的项目</a>
+      <a href="about.html">关于她</a>
     </nav>
     <button class="menu-btn" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false">菜单</button>
   </header>
-
   <div class="mobile-menu" id="mobileMenu" hidden>
-    <a href="#articles">我的文章</a>
-    <a href="#projects">我的项目</a>
-    <a href="#portrait">关于她</a>
+    <a href="articles.html">我的文章</a>
+    <a href="projects.html">我的项目</a>
+    <a href="about.html">关于她</a>
   </div>
-
   <main>
     <section class="hero" aria-label="首页动画">
       <div class="hero-stage">
@@ -50,92 +47,51 @@
           <p class="hero-lead">这里放着想法、作品，还有一点点还没说完的话。</p>
           <p class="hero-hint" id="heroHint">移动鼠标，画面会跟着你</p>
         </div>
-        <a class="hero-scroll" href="#articles">往下看看</a>
       </div>
     </section>
 
-    <section class="section" id="articles" aria-labelledby="articles-title">
+    <section class="section" id="enter">
       <div class="shell">
         <div class="section-heading">
-          <p class="section-kicker">01</p>
-          <h2 id="articles-title">我的文章</h2>
-          <p>最近写下的一些想法，之后会慢慢补上全文。</p>
+          <p class="section-kicker">ENTER</p>
+          <h2>有文章、项目，也有一些与成果无关的念头。</h2>
+          <p>想看作品、读一点随笔，或者先认识一下她，都从这里开始。</p>
         </div>
-        <div class="article-list">
-          <article class="article-card">
-            <p class="meta">2026 · 随笔</p>
-            <h3>把一个想法做成能点开的东西</h3>
-            <p>从「我好像想到了」到「别人真的能用」，中间隔着很多很小的决定。</p>
-          </article>
-          <article class="article-card">
-            <p class="meta">2026 · 记录</p>
-            <h3>在二线城市找互联网机会时，我在看什么</h3>
-            <p>不只是大厂有没有分部，还有这座城市能不能让人安心地把事情做完。</p>
-          </article>
-          <article class="article-card">
-            <p class="meta">草稿</p>
-            <h3>关于「小天地」这件事</h3>
-            <p>我想给自己留一个不着急展示成果、也能诚实放情绪的角落。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
-      <div class="shell">
-        <div class="section-heading">
-          <p class="section-kicker">02</p>
-          <h2 id="projects-title">我的项目</h2>
-          <p>正在做的、做过的，以及还在发芽的。</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <p class="meta">进行中</p>
-            <h3>个人小天地网站</h3>
-            <p>这个站点本身：用中文把文章、项目和一点点自我侧写放在一起。</p>
-          </article>
-          <article class="project-card">
-            <p class="meta">探索中</p>
-            <h3>AI 辅助学习</h3>
-            <p>试着把学习流程拆小，让新工具真正帮到日常，而不是只停留在演示。</p>
-          </article>
-          <article class="project-card">
-            <p class="meta">想法</p>
-            <h3>下一个小产品</h3>
-            <p>还在收集真实问题。有了更清楚的方向，会更新到这里。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="portrait" aria-labelledby="portrait-title">
-      <div class="shell portrait-grid">
-        <div class="section-heading">
-          <p class="section-kicker">03</p>
-          <h2 id="portrait-title">关于她</h2>
-          <p class="portrait-subtitle">她的侧写</p>
-        </div>
-        <div class="portrait-copy">
-          <p class="lead">你好，我是黎婷，也可以叫我 Lydia。</p>
-          <p>我喜欢从真实的小事出发，试着把新技术变成别人能摸到的体验。这里不是一份简历，更像一间慢慢布置的房间：有文章，有项目，也有还没想明白的句子。</p>
-          <p>如果某一天你在这里停留得久一点，希望带走的是一点好奇，而不是一套标准答案。</p>
-          <ul class="portrait-notes" aria-label="她在意的事">
-            <li>从真实问题出发</li>
-            <li>边做边学，允许试错</li>
-            <li>给生活留一点空白</li>
-          </ul>
+        <div class="enter-grid">
+          <a class="enter-card" href="articles.html">
+            <p class="meta">01</p>
+            <h3>我的文章</h3>
+            <p>随笔、记录，和还在生长的想法。</p>
+            <span class="enter-link">去看看</span>
+          </a>
+          <a class="enter-card" href="projects.html">
+            <p class="meta">02</p>
+            <h3>我的项目</h3>
+            <p>做过的、正在做的，以及过程中的尝试。</p>
+            <span class="enter-link">去看看</span>
+          </a>
+          <a class="enter-card" href="about.html">
+            <p class="meta">03</p>
+            <h3>关于她</h3>
+            <p>不是一份简历，更像一间慢慢布置的房间。</p>
+            <span class="enter-link">去看看</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <p>黎婷的小天地 · 认真创造，偶尔发呆。</p>
-      <p class="footer-meta">© <span id="year"></span> 黎婷 Lydia</p>
+      <div>
+        <p class="footer-title">聊聊也可以</p>
+        <p class="footer-muted">关于文章里的某个想法，或者你最近在折腾的东西，都欢迎来聊聊。</p>
+      </div>
+      <div class="footer-meta">
+        <p>黎婷的小天地 · 认真创造，偶尔发呆。</p>
+        <p>© <span class="year"></span> 黎婷 Lydia</p>
+      </div>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
