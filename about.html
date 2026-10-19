@@ -2,98 +2,52 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0712">
-  <meta name="description" content="关于黎婷：好奇、折腾，和一点点还没想明白的话。">
-  <title>关于她 — 黎婷的小天地</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e7e7e7">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="关于黎婷 / Lydia">
+  <title>关于她 — Lydia</title>
 </head>
 <body>
-  <header class="site-header site-header-solid">
-    <a class="brand" href="index.html">
-      <span class="brand-mark" aria-hidden="true">✦</span>
-      <span class="brand-text">
-        <strong>黎婷的小天地</strong>
-        <em>Lydia's little world</em>
-      </span>
-    </a>
-    <nav class="site-nav" aria-label="主导航">
-      <a href="articles.html">我的文章</a>
-      <a href="projects.html">我的项目</a>
-      <a href="about.html" aria-current="page">关于她</a>
-    </nav>
-    <button class="menu-btn" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false">菜单</button>
+  <div class="page">
+  <header class="nav nav--solid" id="nav">
+    <a href="index.html" aria-label="回首页"><svg class="nav__logo" viewBox="0 0 22 22" aria-hidden="true">
+<path fill="#050505" d="M0 0Q5.5 4.6 7 2.6Q11-1.6 15 2.6Q16.500 4.6 22 0V22Q16.500 17.400 15 19.400Q11 23.600 7 19.400Q5.500 17.400 0 22Z"/>
+<path fill="#ececea" d="M5.800 6.600Q6.500 10.300 10.200 11Q6.500 11.700 5.800 15.400Q5.100 11.700 1.400 11Q5.100 10.300 5.800 6.600ZM16.200 6.600Q16.900 10.300 20.600 11Q16.900 11.700 16.200 15.400Q15.500 11.700 11.800 11Q15.500 10.300 16.200 6.600Z"/>
+</svg></a>
+    <a class="nav__back" href="index.html">← 首页</a>
+    <span class="nav__page">about / 关于她</span>
   </header>
-  <div class="mobile-menu" id="mobileMenu" hidden>
-    <a href="articles.html">我的文章</a>
-    <a href="projects.html">我的项目</a>
-    <a href="about.html">关于她</a>
-  </div>
-  <main>
-    <section class="page-hero">
-      <div class="shell">
-        <p class="section-kicker">ABOUT HER</p>
-        <h1>对世界保持好奇<br>偶尔较真，经常折腾。</h1>
-        <p class="page-lead">你好，我是黎婷，也可以叫我 Lydia。这里不是一份履历，只是几个让方向慢慢清晰的时刻。</p>
-      </div>
+    <section class="page__hero">
+      <p class="page__kicker">Story</p>
+      <h1>对世界保持好奇<br>偶尔较真，经常折腾。</h1>
+      <p class="page__lead">你好，我是黎婷，也可以叫我 Lydia。这里不是一份履历，只是几个让方向慢慢清晰的时刻。</p>
     </section>
-
-    <section class="section">
-      <div class="shell">
-        <div class="section-heading">
-          <p class="section-kicker">SIDE NOTES</p>
-          <h2>她的侧写</h2>
-          <p>我喜欢从真实的小事出发，试着把新技术变成别人能摸到的体验。</p>
-        </div>
-        <div class="portrait-notes-grid">
-          <div class="note-card"><p class="meta">01</p><h3>从真实问题出发</h3><p>先弄清自己到底想完成什么，再决定要不要用新工具。</p></div>
-          <div class="note-card"><p class="meta">02</p><h3>边做边学</h3><p>允许试错。很多答案，都是做完以后才慢慢明白。</p></div>
-          <div class="note-card"><p class="meta">03</p><h3>留一点空白</h3><p>给生活留空隙，也给还没想明白的句子留位置。</p></div>
-        </div>
+    <div class="shell">
+      <p class="page__kicker">Side notes</p>
+      <div class="notes-grid">
+        <div class="card"><p class="meta">01</p><h3>从真实问题出发</h3><p>先弄清自己到底想完成什么，再决定要不要用新工具。</p></div>
+        <div class="card"><p class="meta">02</p><h3>边做边学</h3><p>允许试错。很多答案，都是做完以后才慢慢明白。</p></div>
+        <div class="card"><p class="meta">03</p><h3>留一点空白</h3><p>给生活留空隙，也给还没想明白的句子留位置。</p></div>
       </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="shell">
-        <div class="section-heading">
-          <p class="section-kicker">JOURNEY</p>
-          <h2>一路走来，答案一直在变。</h2>
-        </div>
-        <ol class="timeline">
-          <li>
-            <p class="meta">最近</p>
-            <h3>布置这间小天地</h3>
-            <p>开始把自己的文章、项目和一点心里话放在同一个地方。</p>
-          </li>
-          <li>
-            <p class="meta">探索中</p>
-            <h3>试着用 AI 解决真实问题</h3>
-            <p>从新鲜感走向可体验的小产品，关心它能不能长进原来的生活里。</p>
-          </li>
-          <li>
-            <p class="meta">一直如此</p>
-            <h3>保持好奇</h3>
-            <p>不一定每次都有结论，但希望留下的都是当时真实的自己。</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="shell footer-inner">
-      <div>
-        <p class="footer-title">聊聊也可以</p>
-        <p class="footer-muted">关于文章里的某个想法，或者你最近在折腾的东西，都欢迎来聊聊。</p>
-      </div>
-      <div class="footer-meta">
-        <p>黎婷的小天地 · 认真创造，偶尔发呆。</p>
-        <p>© <span class="year"></span> 黎婷 Lydia</p>
-      </div>
+      <p class="page__kicker" style="margin-top:calc(var(--u)*48)">Journey</p>
+      <ol class="timeline">
+        <li><p class="meta">最近</p><h3>布置这间小天地</h3><p>开始把自己的文章、项目和一点心里话放在同一个地方。</p></li>
+        <li><p class="meta">探索中</p><h3>试着用 AI 解决真实问题</h3><p>从新鲜感走向可体验的小产品，关心它能不能长进原来的生活里。</p></li>
+        <li><p class="meta">一直如此</p><h3>保持好奇</h3><p>不一定每次都有结论，但希望留下的都是当时真实的自己。</p></li>
+      </ol>
     </div>
+  <footer class="site-footer">
+    <div>
+      <strong>聊聊也可以</strong>
+      <p>关于文章里的某个想法，或者你最近在折腾的东西，都欢迎来聊聊。</p>
+    </div>
+    <p>黎婷的小天地 · © <span class="year"></span> Lydia</p>
   </footer>
   <script src="script.js"></script>
+  </div>
 </body>
 </html>

@@ -2,77 +2,55 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0712">
-  <meta name="description" content="黎婷写下的随笔与想法。">
-  <title>我的文章 — 黎婷的小天地</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e7e7e7">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="黎婷写下的随笔与想法。">
+  <title>我的文章 — Lydia</title>
 </head>
 <body>
-  <header class="site-header site-header-solid">
-    <a class="brand" href="index.html">
-      <span class="brand-mark" aria-hidden="true">✦</span>
-      <span class="brand-text">
-        <strong>黎婷的小天地</strong>
-        <em>Lydia's little world</em>
-      </span>
-    </a>
-    <nav class="site-nav" aria-label="主导航">
-      <a href="articles.html" aria-current="page">我的文章</a>
-      <a href="projects.html">我的项目</a>
-      <a href="about.html">关于她</a>
-    </nav>
-    <button class="menu-btn" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false">菜单</button>
+  <div class="page">
+  <header class="nav nav--solid" id="nav">
+    <a href="index.html" aria-label="回首页"><svg class="nav__logo" viewBox="0 0 22 22" aria-hidden="true">
+<path fill="#050505" d="M0 0Q5.5 4.6 7 2.6Q11-1.6 15 2.6Q16.500 4.6 22 0V22Q16.500 17.400 15 19.400Q11 23.600 7 19.400Q5.500 17.400 0 22Z"/>
+<path fill="#ececea" d="M5.800 6.600Q6.500 10.300 10.200 11Q6.500 11.700 5.800 15.400Q5.100 11.700 1.400 11Q5.100 10.300 5.800 6.600ZM16.200 6.600Q16.900 10.300 20.600 11Q16.900 11.700 16.200 15.400Q15.500 11.700 11.800 11Q15.500 10.300 16.200 6.600Z"/>
+</svg></a>
+    <a class="nav__back" href="index.html">← 首页</a>
+    <span class="nav__page">articles / 我的文章</span>
   </header>
-  <div class="mobile-menu" id="mobileMenu" hidden>
-    <a href="articles.html">我的文章</a>
-    <a href="projects.html">我的项目</a>
-    <a href="about.html">关于她</a>
-  </div>
-  <main>
-    <section class="page-hero">
-      <div class="shell">
-        <p class="section-kicker">ARTICLES</p>
-        <h1>我的文章</h1>
-        <p class="page-lead">想把平时一闪而过的念头、对产品的思考，以及对生活的一些看法，慢慢留在这里。</p>
-      </div>
+    <section class="page__hero">
+      <p class="page__kicker">Articles</p>
+      <h1>我的文章</h1>
+      <p class="page__lead">想把平时一闪而过的念头、对产品的思考，以及对生活的一些看法，慢慢留在这里。</p>
     </section>
-
-    <section class="section">
-      <div class="shell article-stack">
-        <article class="article-card">
-          <p class="meta">2026 · 随笔</p>
-          <h2>把一个想法做成能点开的东西</h2>
-          <p>从「我好像想到了」到「别人真的能用」，中间隔着很多很小的决定。</p>
-        </article>
-        <article class="article-card">
-          <p class="meta">2026 · 记录</p>
-          <h2>在二线城市找互联网机会时，我在看什么</h2>
-          <p>不只是大厂有没有分部，还有这座城市能不能让人安心地把事情做完。</p>
-        </article>
-        <article class="article-card">
-          <p class="meta">草稿</p>
-          <h2>关于「小天地」这件事</h2>
-          <p>我想给自己留一个不着急展示成果、也能诚实放情绪的角落。</p>
-        </article>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="shell footer-inner">
-      <div>
-        <p class="footer-title">聊聊也可以</p>
-        <p class="footer-muted">关于文章里的某个想法，或者你最近在折腾的东西，都欢迎来聊聊。</p>
-      </div>
-      <div class="footer-meta">
-        <p>黎婷的小天地 · 认真创造，偶尔发呆。</p>
-        <p>© <span class="year"></span> 黎婷 Lydia</p>
-      </div>
+    <div class="shell card-stack">
+      <article class="card">
+        <p class="meta">2026 · 随笔</p>
+        <h2>把一个想法做成能点开的东西</h2>
+        <p>从「我好像想到了」到「别人真的能用」，中间隔着很多很小的决定。</p>
+      </article>
+      <article class="card">
+        <p class="meta">2026 · 记录</p>
+        <h2>在二线城市找互联网机会时，我在看什么</h2>
+        <p>不只是大厂有没有分部，还有这座城市能不能让人安心地把事情做完。</p>
+      </article>
+      <article class="card">
+        <p class="meta">草稿</p>
+        <h2>关于「小天地」这件事</h2>
+        <p>我想给自己留一个不着急展示成果、也能诚实放情绪的角落。</p>
+      </article>
     </div>
+  <footer class="site-footer">
+    <div>
+      <strong>聊聊也可以</strong>
+      <p>关于文章里的某个想法，或者你最近在折腾的东西，都欢迎来聊聊。</p>
+    </div>
+    <p>黎婷的小天地 · © <span class="year"></span> Lydia</p>
   </footer>
   <script src="script.js"></script>
+  </div>
 </body>
 </html>
