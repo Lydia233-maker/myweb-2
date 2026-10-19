@@ -114,7 +114,7 @@
     var tip=push('bot typing','Nomi 在舔爪子…');
     setTimeout(function(){ tip.remove(); pushBot(reply(q)); }, 420+Math.random()*380);
   }
-  nomiFab.addEventListener('click', function(){
+  nomiFab.addEventListener('nomi-open', function(){
     if(nomiLayer.classList.contains('is-open')) closeNomi(); else openNomi();
   });
   nomiClose.addEventListener('click', closeNomi);
