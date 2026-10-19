@@ -39,7 +39,7 @@
     var el=document.getElementById(id);
     if(!el) return;
     el.scrollIntoView({behavior:'smooth', block:'center'});
-    flash(el.closest('.folio-main, .folio-side, .folio') || el);
+    flash(el.closest('.mag-feature, .mag-rail, .mag-lab, .mag') || el);
   }
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
     a.addEventListener('click', function(e){
@@ -151,7 +151,7 @@
     document.querySelectorAll('h1 .ln-i').forEach(function(el,i){ anim(el,[{transform:'translateY(130%)'},{transform:'translateY(0)'}],{delay:420+i*120,duration:950,easing:expo}); });
     anim(document.querySelector('.sub'),[{opacity:0,transform:'translateY('+lift+')'},{opacity:1,transform:'translateY(0)'}],{delay:780,duration:620,easing:expo});
     document.querySelectorAll('.ctas .btn').forEach(function(a,i){ anim(a,[{opacity:0,transform:'translateY('+lift+')'},{opacity:1,transform:'translateY(0)'}],{delay:920+i*70,duration:560,easing:expo}); });
-    anim(document.querySelector('.folio'),[{opacity:0,transform:'translateY('+rise+')'},{opacity:1,transform:'translateY(0)'}],{delay:1000,duration:660,easing:expo});
+    anim(document.querySelector('.mag'),[{opacity:0,transform:'translateY('+rise+')'},{opacity:1,transform:'translateY(0)'}],{delay:1000,duration:660,easing:expo});
     anim(document.querySelector('.footer'),[{opacity:0},{opacity:1}],{delay:1180,duration:420,easing:soft});
     anim(nomiFab,[{opacity:0,transform:'scale(.9)'},{opacity:1,transform:'scale(1)'}],{delay:1300,duration:480,easing:soft});
     var last=0; running.forEach(function(a){ last=Math.max(last,(a.effect.getTiming().delay||0)+(a.effect.getTiming().duration||0)); });
@@ -160,7 +160,7 @@
   function finish(){
     running.forEach(function(a){ try{a.cancel();}catch(e){} });
     document.documentElement.classList.remove('js-anim');
-    var nodes=[].slice.call(document.querySelectorAll('.brand,.nav a,.actions > *,.eyebrow,.sub,.ctas .btn,.folio,.footer,h1 .ln-i,#nomiFab'));
+    var nodes=[].slice.call(document.querySelectorAll('.brand,.nav a,.actions > *,.eyebrow,.sub,.ctas .btn,.mag,.footer,h1 .ln-i,#nomiFab'));
     nodes.forEach(function(el){ if(el){ el.style.opacity='1'; el.style.transform='none'; }});
     requestAnimationFrame(function(){ nodes.forEach(function(el){ if(el){ el.style.opacity=''; el.style.transform=''; }}); });
   }
