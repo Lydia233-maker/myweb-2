@@ -16,15 +16,15 @@
     var img = fab.querySelector('img.nomi-face');
     if (!img) return;
     var base = assetBase(img);
-    var idle = base + 'nomi-chibi-idle.png';
-    var anim = base + 'nomi-anim.webp';
+    var idle = base + 'nomi-chibi-idle.png?v=face2';
+    var anim = base + 'nomi-anim.webp?v=face2';
     function setIdle() {
       img.src = idle;
     }
 
     function playAnim() {
       if (reduce) return;
-      img.src = anim + '?play=' + Date.now();
+      img.src = anim + '&play=' + Date.now();
     }
 
     setIdle();
@@ -39,6 +39,6 @@
 
   document.querySelectorAll('.nomi-avatar img.nomi-face').forEach(function (img) {
     var base = assetBase(img);
-    img.src = base + 'nomi-chibi-idle.png';
+    img.src = base + 'nomi-chibi-idle.png?v=face2';
   });
 })();
