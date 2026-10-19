@@ -12,7 +12,7 @@
 <script>
 (function(){try{if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('js-anim');}}catch(e){}})();
 </script>
-<link rel="stylesheet" href="style.css?v=drag1">
+<link rel="stylesheet" href="style.css?v=mag1">
 </head>
 <body>
   <div class="frame" id="home">
@@ -67,6 +67,9 @@
         <div class="folio" id="doing" aria-label="最近在动的东西">
           <a class="folio-main" href="articles/05-2026-ai-news-notes.html" style="color:inherit">
             <div class="folio-label"><span>Featured</span><strong>最近想多讲两句的</strong></div>
+            <div class="folio-media">
+              <img class="folio-cover" src="assets/covers/05-ai-news.jpg" alt="一周 AI 新闻笔记封面" width="640" height="360" loading="lazy">
+            </div>
             <div class="folio-body">
               <div class="folio-kicker">笔记 · 2026.10</div>
               <h2 class="folio-title">这一周的 AI 新闻，我只想记三件事</h2>
@@ -79,9 +82,9 @@
           <div class="folio-side" id="notes">
             <div class="folio-label"><span>Writing</span><strong>刚写的 · <a href="articles.html" style="text-decoration:underline;text-underline-offset:3px">全部</a></strong></div>
             <div class="folio-body">
-              <article class="work-item"><span class="idx">01</span><h3><a href="articles/04-2025-agent-prd.html">Agent 来了之后，需求文档还怎么写</a></h3><p>当系统能多步调用工具，PRD 要写清边界、权限与人何时介入。</p></article>
-              <article class="work-item"><span class="idx">02</span><h3><a href="articles/03-2025-fixing-ai-errors.html">AI 出了错怎么修</a></h3><p>出错后怎么发现、回退、把人接回来。</p></article>
-              <article class="work-item"><span class="idx">03</span><h3><a href="articles/02-2024-not-just-chat.html">别再把大模型当聊天框</a></h3><p>把「会说」拉回「有据」的关键一跳。</p></article>
+              <article class="work-item work-item--cover"><a class="work-item__link" href="articles/04-2025-agent-prd.html"><img class="work-item__thumb" src="assets/covers/04-agent-prd.jpg" alt="" width="88" height="50" loading="lazy"><span class="work-item__text"><span class="idx">01</span><h3>Agent 来了之后，需求文档还怎么写</h3><p>当系统能多步调用工具，PRD 要写清边界、权限与人何时介入。</p></span></a></article>
+              <article class="work-item work-item--cover"><a class="work-item__link" href="articles/03-2025-fixing-ai-errors.html"><img class="work-item__thumb" src="assets/covers/03-fixing-errors.jpg" alt="" width="88" height="50" loading="lazy"><span class="work-item__text"><span class="idx">02</span><h3>AI 出了错怎么修</h3><p>出错后怎么发现、回退、把人接回来。</p></span></a></article>
+              <article class="work-item work-item--cover"><a class="work-item__link" href="articles/02-2024-not-just-chat.html"><img class="work-item__thumb" src="assets/covers/02-not-just-chat.jpg" alt="" width="88" height="50" loading="lazy"><span class="work-item__text"><span class="idx">03</span><h3>别再把大模型当聊天框</h3><p>把「会说」拉回「有据」的关键一跳。</p></span></a></article>
             </div>
           </div>
           <div class="folio-side" id="about">
