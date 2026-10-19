@@ -30,13 +30,17 @@ ul, ol { list-style: none; }
   isolation: isolate;
   background: var(--paper);
 }
+@media (max-height: 680px) {
+  .hero { height: auto; min-height: 100vh; overflow: visible; padding-bottom: calc(var(--u) * 40); }
+  .hero__body { position: relative; left: var(--gutter); bottom: auto; margin-top: calc(var(--u) * 280); }
+}
 .hero__media {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 62% 50%;
+  object-position: center 40%;
   z-index: -1;
   pointer-events: none;
 }
@@ -68,6 +72,23 @@ ul, ol { list-style: none; }
   font-size: calc(var(--u) * 11);
   font-weight: 500;
 }
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--u) * 22);
+  margin-left: auto;
+  margin-right: calc(var(--u) * 18);
+  font-size: calc(var(--u) * 12);
+  letter-spacing: -0.01em;
+}
+.nav__links a {
+  opacity: .55;
+  transition: opacity .2s;
+}
+.nav__links a:hover,
+.nav__links a[aria-current="page"] { opacity: 1; }
+.nav.nav--solid .nav__links { margin-right: 0; }
+.nav.nav--solid .nav__page { margin-left: calc(var(--u) * 16); opacity: .55; }
 
 .hero__title {
   position: absolute;
@@ -257,13 +278,16 @@ ul, ol { list-style: none; }
   }
   .hero { min-height: calc(var(--u) * 620); }
   .hero__media {
-    top: 27%; height: 50%; inset: auto 0; width: 100%;
-    object-position: 73% 50%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 86%, transparent);
-    mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 86%, transparent);
+    inset: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
   .nav { height: calc(var(--u) * 68); padding-right: var(--gutter); }
   .nav__logo { width: calc(var(--u) * 26); height: calc(var(--u) * 26); }
+  .nav__links { gap: calc(var(--u) * 14); margin-right: 0; font-size: calc(var(--u) * 11); }
+  .nav.nav--solid .nav__page { display: none; }
   .hero__title {
     top: calc(var(--u) * 92);
     left: var(--gutter);
@@ -297,7 +321,7 @@ ul, ol { list-style: none; }
 
 @media (max-width: 720px) and (max-height: 520px) {
   .hero__media {
-    top: 0; height: 100%; object-position: 100% 50%;
+    inset: 0; height: 100%; width: 100%; object-position: center 40%;
     -webkit-mask-image: none; mask-image: none;
   }
   .hero__title { width: calc(var(--u) * 180); top: calc(var(--u) * 70); }
