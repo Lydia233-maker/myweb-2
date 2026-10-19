@@ -79,7 +79,7 @@ document.getElementById('search').addEventListener('input', render);
 
 if (!memos.length) {
   memos = [
-    { id: '1', text: '雷达好用榜：先做 MVP 再谈 Docker。', tags: ['产品', '雷达'], ts: Date.now() - 86400000 },
+    { id: '1', text: '演示先做 MVP，再谈部署。', tags: ['产品', '笔记'], ts: Date.now() - 86400000 },
     { id: '2', text: '评估集要会「认栽」。', tags: ['AI'], ts: Date.now() - 3600000 },
   ];
   save();
