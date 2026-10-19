@@ -1,0 +1,16 @@
+:root{--bg:#0c1018;--ink:#e8e6f0;--muted:#8a8aa0;--pink:#e8a4c8;--cyan:#7ec8e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Figtree,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.top{padding:16px 20px;display:flex;justify-content:space-between;border-bottom:1px solid rgba(232,228,240,.1)}
+.hero{padding:48px 20px 28px;max-width:1000px;margin:0 auto}
+.hero h1{font-size:clamp(32px,5vw,52px);font-weight:400;letter-spacing:-.03em;text-shadow:0 0 40px rgba(232,164,200,.25)}
+.districts{display:flex;gap:12px;overflow-x:auto;padding:20px;scroll-snap-type:x mandatory}
+.district{flex:0 0 min(70vw,280px);scroll-snap-align:start;padding:20px;border:1px solid rgba(232,164,200,.35);background:linear-gradient(160deg,rgba(232,164,200,.08),transparent);transition:box-shadow .25s}
+.district:hover{box-shadow:0 0 24px rgba(126,200,232,.25)}
+.district h3{font-weight:400;margin:0 0 8px;color:var(--pink)}
+.marquee{overflow:hidden;border-block:1px solid rgba(232,228,240,.08);padding:12px 0}
+.marquee span{display:inline-block;padding-left:100%;animation:roll 18s linear infinite;white-space:nowrap;font-size:13px;color:var(--muted)}
+@keyframes roll{to{transform:translateX(-100%)}}
+.reveal{opacity:0;transform:translateY(18px);transition:.6s ease}
+.reveal.is-in{opacity:1;transform:none}
+.back{margin:20px;font-size:13px;text-decoration:underline;display:inline-block;color:var(--muted)}

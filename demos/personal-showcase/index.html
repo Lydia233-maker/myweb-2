@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#efede8">
+<title>Personal Showcase · Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <strong>Personal Showcase</strong>
+    <nav>
+      <a href="#work" class="is-active">作品</a>
+      <a href="#about">关于</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+  <section class="hero reveal">
+    <div>
+      <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)">Template demo · 原创实现</p>
+      <h1>把作品摆成杂志目录，而不是九宫格堆砌。</h1>
+      <p>奶油编辑风个人展示页：大标题、留白、卡片悬停。灵感来自现代 portfolio 模版气质（非商用素材）。</p>
+    </div>
+    <div class="hero-card" id="about">
+      <h2 style="margin:0 0 8px;font-size:18px;font-weight:500">黎婷 · 产品</h2>
+      <p style="margin:0;color:var(--muted);font-size:14px">做 AI 产品，也记笔记。这个页面是 lidyapm.com 上的 vibe coding 演示。</p>
+    </div>
+  </section>
+  <section class="section reveal" id="work">
+    <h2>精选条目</h2>
+    <div class="grid">
+      <article class="card"><div class="ph"></div><div class="txt"><strong>评估集笔记</strong><p style="margin:6px 0 0;font-size:13px;color:var(--muted)">产品 · 2026</p></div></article>
+      <article class="card"><div class="ph" style="background:linear-gradient(135deg,#e0dcd4,#c9c2b4)"></div><div class="txt"><strong>Agent PRD</strong><p style="margin:6px 0 0;font-size:13px;color:var(--muted)">写作 · 2025</p></div></article>
+      <article class="card"><div class="ph" style="background:linear-gradient(135deg,#ebe8e0,#d6d0c4)"></div><div class="txt"><strong>RAG 实践</strong><p style="margin:6px 0 0;font-size:13px;color:var(--muted)">笔记 · 2024</p></div></article>
+      <article class="card"><div class="ph" style="background:linear-gradient(135deg,#e8e6e0,#bfb9ad)"></div><div class="txt"><strong>小站改版</strong><p style="margin:6px 0 0;font-size:13px;color:var(--muted)">Web · 2026</p></div></article>
+    </div>
+  </section>
+  <section class="section reveal" id="contact">
+    <h2>联系</h2>
+    <p><a href="mailto:q1091243677@gmail.com" style="text-decoration:underline">写信给我</a> · <a href="../index.html" style="text-decoration:underline">返回演示角</a></p>
+  </section>
+  <a class="back" href="../index.html">← 演示角</a>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
