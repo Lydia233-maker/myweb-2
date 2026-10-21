@@ -66,6 +66,4 @@ document.getElementById('export').addEventListener('click', () => {
   a.click();
 });
 
-document.getElementById('credit').innerHTML =
-  '雷达：<strong>生成式海报 / 壁纸工厂</strong> · <a href="https://radar.lyihub.com/" target="_blank" rel="noopener">radar.lyihub.com</a>';
 draw();
