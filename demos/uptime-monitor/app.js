@@ -2,7 +2,7 @@ const TARGETS = [
   { name: 'lidyapm.com', url: 'https://lidyapm.com/', mode: 'live' },
   { name: 'GitHub API', url: 'https://api.github.com/', mode: 'live' },
   { name: '内部 API（模拟）', url: 'https://example.invalid/api', mode: 'mock-down' },
-  { name: '周报机器人', url: 'https://radar.lyihub.com/', mode: 'live' },
+  { name: '个人小站', url: 'https://lidyapm.com/', mode: 'live' },
   { name: '对象存储', url: 'https://httpbin.org/status/503', mode: 'mock-down' },
 ];
 
