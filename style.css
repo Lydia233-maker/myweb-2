@@ -321,9 +321,12 @@ a.folio-main:hover{background:#faf9f6}
   padding:20px;background:rgba(26,26,23,.28);
 }
 .nomi-layer.is-open{display:flex}
+body.nomi-open{overflow:hidden;overscroll-behavior:none}
 .nomi-panel{
   width:min(400px,100%);height:min(560px,calc(100dvh - 40px));
+  max-height:calc(100dvh - 40px);
   background:var(--panel);border:1px solid var(--rule);display:flex;flex-direction:column;
+  min-height:0;overflow:hidden;
   box-shadow:0 20px 60px rgba(30,28,22,.2);
   transform:translateY(12px);opacity:0;
   transition:transform .28s cubic-bezier(.16,1,.3,1),opacity .28s ease;
@@ -348,10 +351,18 @@ a.folio-main:hover{background:#faf9f6}
 .nomi-quick{flex:0 0 auto;display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px}
 .nomi-quick button{font-size:12px;padding:6px 10px;border:1px solid var(--hair);color:var(--body)}
 .nomi-quick button:hover{background:rgba(26,26,23,.045);color:var(--ink)}
-.nomi-form{flex:0 0 auto;display:flex;gap:8px;padding:12px 14px;border-top:1px solid rgba(38,38,31,.14)}
-.nomi-form input{flex:1;min-width:0;height:40px;padding:0 12px;border:1px solid var(--hair);background:#fff;color:var(--ink);font:inherit;font-size:14px}
+.nomi-form{
+  flex:0 0 auto;display:flex;gap:8px;align-items:center;max-width:100%;
+  padding:12px 14px;border-top:1px solid rgba(38,38,31,.14);
+}
+.nomi-form input{
+  flex:1 1 auto;min-width:0;width:0;height:40px;padding:0 12px;
+  border:1px solid var(--hair);background:#fff;color:var(--ink);font:inherit;font-size:16px;
+}
 .nomi-form input:focus{outline:2px solid #1a1a17;outline-offset:1px}
-.nomi-form button[type=submit]{height:40px;padding:0 14px;background:var(--ink-solid);color:var(--on-dark);font-size:13px}
+.nomi-form button[type=submit]{
+  flex:0 0 auto;height:40px;padding:0 14px;background:var(--ink-solid);color:var(--on-dark);font-size:13px;
+}
 .nomi-form button[type=submit]:hover{background:#2c2c27}
 
 .js-anim .brand,.js-anim .nav a,.js-anim .actions > *,.js-anim .eyebrow,.js-anim .sub,.js-anim .ctas .btn,.js-anim .mag,.js-anim .footer,.js-anim #nomiFab{opacity:0}
@@ -387,8 +398,33 @@ a.folio-main:hover{background:#faf9f6}
   h1{font-size:clamp(22px,calc(8.33vw - 2px),34px)}.sub{font-size:14px}
   .stage{padding:0 10px}.folio-body{padding:16px 14px 20px}.folio-title{font-size:18px}
   .nomi-fab{width:150px;height:150px;right:4px;bottom:4px}.nomi-fab img.nomi-face{width:150px;height:150px}.nomi-hint{display:none}
+}
+@media (max-width:720px){
   .nomi-layer{padding:0;align-items:stretch;justify-content:stretch}
-  .nomi-panel{width:100%;height:100%;max-height:none}
+  .nomi-layer.is-open{
+    top:var(--nomi-vv-top,0);left:0;right:0;bottom:auto;width:100%;
+    height:var(--nomi-vv-height,100dvh);height:var(--nomi-vv-height,100svh);
+  }
+  .nomi-panel{
+    width:100%;max-width:none;height:100%;max-height:none;
+    border-left:0;border-right:0;border-bottom:0;box-shadow:none;
+  }
+  .nomi-head{
+    padding-top:max(0px,env(safe-area-inset-top));
+    padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));
+  }
+  .nomi-log{
+    padding-left:max(14px,env(safe-area-inset-left));padding-right:max(14px,env(safe-area-inset-right));
+  }
+  .nomi-quick{
+    padding-left:max(14px,env(safe-area-inset-left));padding-right:max(14px,env(safe-area-inset-right));
+  }
+  .nomi-form{
+    padding-left:max(14px,env(safe-area-inset-left));padding-right:max(14px,env(safe-area-inset-right));
+    padding-bottom:max(12px,env(safe-area-inset-bottom));
+  }
+  .nomi-form input:focus{outline-offset:-1px}
+  .nomi-form button[type=submit]{padding:0 12px}
 }
 @media (max-width:360px){.actions .link-action.mail{display:none}.drawer-cta{display:inline-flex}}
 

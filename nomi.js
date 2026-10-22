@@ -37,6 +37,7 @@ var greeted=false;
     setDrawer(false);
     nomiLayer.hidden=false;
     nomiLayer.classList.add('is-open');
+    document.body.classList.add('nomi-open');
     nomiFab.setAttribute('aria-expanded','true');
     if(!greeted){
       greeted=true;
@@ -46,6 +47,7 @@ var greeted=false;
   }
   function closeNomi(){
     nomiLayer.classList.remove('is-open');
+    document.body.classList.remove('nomi-open');
     nomiFab.setAttribute('aria-expanded','false');
     setTimeout(function(){ nomiLayer.hidden=true; }, 220);
   }

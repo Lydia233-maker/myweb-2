@@ -130,4 +130,31 @@
   }
 
   document.querySelectorAll('.nomi-fab').forEach(bindFab);
+
+  var nomiLayer = document.getElementById('nomiLayer');
+  var nomiMobile = window.matchMedia('(max-width: 720px)');
+  function clearNomiViewport() {
+    document.documentElement.style.removeProperty('--nomi-vv-top');
+    document.documentElement.style.removeProperty('--nomi-vv-height');
+  }
+  function syncNomiViewport() {
+    if (!nomiLayer || !nomiMobile.matches || !nomiLayer.classList.contains('is-open')) {
+      clearNomiViewport();
+      return;
+    }
+    var vv = window.visualViewport;
+    if (!vv) return;
+    document.documentElement.style.setProperty('--nomi-vv-top', vv.offsetTop + 'px');
+    document.documentElement.style.setProperty('--nomi-vv-height', vv.height + 'px');
+  }
+  if (nomiLayer && window.visualViewport) {
+    window.visualViewport.addEventListener('resize', syncNomiViewport);
+    window.visualViewport.addEventListener('scroll', syncNomiViewport);
+    window.addEventListener('resize', syncNomiViewport);
+    new MutationObserver(syncNomiViewport).observe(nomiLayer, {
+      attributes: true,
+      attributeFilter: ['class', 'hidden'],
+    });
+    nomiLayer.addEventListener('transitionend', syncNomiViewport);
+  }
 })();
